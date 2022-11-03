@@ -10,11 +10,23 @@ export const BannerContainer = styled.section`
     height: 800px;
     background-position: center;
 
-
-
+    .menu{
+        color: transparent;
+    }
+    .text-color{
+        color: #666;
+    }
+    li{
+        margin-right: 12px;
+    }
 `;
 
 export const Text = styled.div`
     color: #666;
+
+`;
+
+export const ContainerMobile = styled.div`
+
 
 `;
