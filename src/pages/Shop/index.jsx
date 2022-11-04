@@ -22,7 +22,7 @@ const ShopCart =() => (
     <>
         <HeaderComp />
         <ShopContainer>
-            <BannerShop  className=' flex-grow-1 mt-5'>
+            <BannerShop  className=' flex-grow-1'>
                 <div className="container d-flex justify-content-center">
                     <div className="row mt-5">
                         <div className="col d-flex py-5">
@@ -32,7 +32,7 @@ const ShopCart =() => (
                 </div>
             </BannerShop>
             <div className="container">
-                <div className="row mb-5 text-center row-cols-4 d-flex row-cols-2 col-sm justify-content-center mt-5 g-5">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center mt-5 g-5 mb-5 text-center">
                     <div className="col d-flex">
                         <CardShop
                         title="Salad"

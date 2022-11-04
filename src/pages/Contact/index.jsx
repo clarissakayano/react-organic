@@ -13,7 +13,7 @@ const Contacts =() => (
     <>
         <HeaderComp />
         <ContactContainer>
-            <BannerContact  className=' flex-grow-1 mt-5'>
+            <BannerContact  className=' flex-grow-1'>
                 <div className="container d-flex justify-content-center">
                     <div className="row mt-5">
                         <div className="col d-flex py-5">

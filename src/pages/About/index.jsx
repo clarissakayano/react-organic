@@ -14,7 +14,7 @@ const About =() => (
     <>
         <HeaderComp />
         <AboutContainer>
-            <BannerAbout className=' flex-grow-1 mt-5'>
+            <BannerAbout className=' flex-grow-1'>
             <div className="container d-flex justify-content-center">
                 <div className="row mt-5">
                     <div className="col d-flex py-5">
@@ -23,14 +23,13 @@ const About =() => (
                 </div>
             </div>
             </BannerAbout>
-            <div className="container mt-5 md-col-2">
-                <div className="row row-cols-1 row-cols-lg-2 g-0">
-                    <div className="col">
-                        <img src={hands} alt="hands" />
+            <div className="container mt-5">
+                <div className="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-0 px-md-4">
+                    <div className="col d-flex justify-content-end">
+                        <img className="img-fluid" src={hands} alt="hands" />
                     </div>
                     <div className="col p-3">
                         <MainTitles>Who We Are</MainTitles>
-                        <div className="multiple-borders1"></div>
                         <p>"We are a manufacturing base of organic food
                         produced on our farm. We are a family health care production team,
                         created by today's need for clean and safe food, driven by the desire
@@ -46,7 +45,7 @@ const About =() => (
                 </div>
             </div>
             <div className="container mb-5">
-                <div className="row">
+                <div className="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-0">
                     <div className="col p-3">
                         <MainTitles className="d-flex mt-5">What We Do</MainTitles>
                         <p>"We provide all kinds of organic products. Produced on our farm,
@@ -59,8 +58,8 @@ const About =() => (
                             elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien diam
                             pellentesque ullamcorper."</p>
                     </div>
-                    <div className="col">
-                        <img src={maosfolhas2} alt="hands" />
+                    <div className="col d-flex justify-content-start">
+                        <img className="img-fluid"  src={maosfolhas2} alt="hands" />
                    </div>
                 </div>
             </div>

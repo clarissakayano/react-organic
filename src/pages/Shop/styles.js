@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import bannerShop from '../../assets/bannershop.jpg';
 
-
-
-
-
 export const BannerShop = styled.section`
     background-image: url(${bannerShop});
     background-repeat: no-repeat;
