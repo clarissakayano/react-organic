@@ -1,10 +1,10 @@
-import {Card2} from './styles'
+import {Card2, Text} from './styles'
 
 const CardContact = ({icon, text, description}) => (
-    <Card2 className="container mb-3 py-4" >
-        {icon}
+    <Card2 className="container d-flex flex-column mb-3 py-4">
+        <div className="icon-color d-flex flex-column align-items-center">{icon}</div>
         <div className='card-body d-flex flex-column align-items-center'>
-            <p className="card-text">{description}</p>
+            <Text className="card-text mb-2">{description}</Text>
         </div>
     </Card2>
 );

@@ -19,6 +19,9 @@ export const TitleContact= styled.h2`
 `;
 
 export const ContactContainer = styled.h2`
+ .icon-color{
+    color: #97ae76;
+ }
 `;
 
 export const Button = styled.button`

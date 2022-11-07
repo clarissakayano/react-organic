@@ -12,7 +12,7 @@ const Footer = () => (
 <>
     <FooterContainer className="pb-4">
         <div className="container mt-4">
-            <a class="navbar-brand" href="/">
+            <a className="navbar-brand" href="/">
                 <img src={logo} alt="Logo Organic" />
             </a>
         </div>

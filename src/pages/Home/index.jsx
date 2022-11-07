@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Title from "../../components/Title";
@@ -6,14 +5,12 @@ import CardVeg from "../../components/CardVeg";
 import folhas from '../../assets/folhas.jpg';
 import oranges from '../../assets/oranges.jpg';
 import Meat from '../../assets/carne.jpg';
-import OurProducts from "../../components/OurProducts";
 import CardOurProducts from "../../components/CardOurProd";
 import broccoli from "../../assets/broccoli.jpg";
 import lemon from "../../assets/lemon.jpg";
 import bean from "../../assets/bean.jpg";
 import onion from "../../assets/onion.jpg";
 import {BannerContainer,BannerContainer2, Text, Button} from "./styles";
-import banner2 from "../../assets/banner2.jpg";
 import CardsBlog from "../../components/CardsBlog";
 import CardsBlogRev from "../../components/CardsBlogRev";
 import tempero from "../../assets/blog-card-temp.jpg";
@@ -26,7 +23,6 @@ import avocado from "../../assets/blog-card-avocado.jpg";
 const Home =() => (
     <>
         <Header />
-
         <main>
             <div className="container">
                 <div className="row row-cols-1 row-cols-sm-1 row-cols-md-3">
@@ -152,7 +148,7 @@ const Home =() => (
                     </div>
                 </div>
             </div>
-            <BannerContainer2  className=' flex-grow-1 mt-5'>
+            <BannerContainer2  className='flex-grow-1 mt-5'>
             <div className="container d-flex justify-content-center">
                 <div className="row mt-5">
                     <div className="col d-flex py-5">

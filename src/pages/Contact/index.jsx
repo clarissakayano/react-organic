@@ -3,7 +3,7 @@ import {BannerContact, TitleContact, ContactContainer, Button} from './styles';
 import Footer from "../../components/Footer";
 import HeaderComp from "../../components/HeaderComp";
 import CardContact from '../../components/CardContact';
-import {FiMapPin} from  "react-icons/fi";
+import {FaMapMarkerAlt} from  "react-icons/fa";
 import {MdPhoneAndroid} from  "react-icons/md";
 import {FiMail} from "react-icons/fi";
 
@@ -24,21 +24,21 @@ const Contacts =() => (
             </BannerContact>
             <div className="container">
                 <div className="row row-cols-1 row-cols-md-3 d-flex col-sm justify-content-center mt-5 mb-5">
-                    <div className="col mb-3" >
+                    <div className="col d-flex" >
                         <CardContact
-                        icon={<FiMapPin/>} alt="map"
+                        icon={<FaMapMarkerAlt size={50}/>} alt="map"
                         description="379 5th Ave New York, NYC 10018"
                         />
                     </div>
-                    <div className="col" >
+                    <div className="col d-flex" >
                         <CardContact
-                        icon={<MdPhoneAndroid/>} alt="phone"
+                        icon={<MdPhoneAndroid size={50}/>}alt="phone"
                         description="(+1) 11 321 4567"
                         />
                     </div>
-                    <div className="col" >
+                    <div className="col d-flex" >
                         <CardContact
-                        icon={<FiMail/>} alt="email"
+                        icon={<FiMail size={50}/>} alt="email"
                         description="contact@site.com"
                         />
                     </div>
@@ -57,7 +57,7 @@ const Contacts =() => (
                         <textarea className='col-12 form-control form-control-lg' type='text' placeholder='Your message'
                         aria-label=".form-control-lg example" rows='6'/>
                         <div class="row mt-3">
-                            <div class="col">
+                            <div className="col">
                                 <input type="text" class="form-control" placeholder="Your Name" aria-label="Your Name"/>
                             </div>
                             <div className="col">

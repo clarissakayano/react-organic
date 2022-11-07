@@ -12,6 +12,4 @@ const CardOurProducts = ({image, text, description, description1}) => (
     </Card2>
 );
 
-
-
 export default CardOurProducts;
