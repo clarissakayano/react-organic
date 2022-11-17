@@ -14,15 +14,35 @@ export const BannerCart = styled.section`
 export const CartContainer = styled.section`
     .bg-color{
         background-color: #d2ffea;
+        font-family: roboto,sans-serif;
+        font-size: 14px;
+        border-color: inherit;
     }
-    .btn-color{
+
+    thead{
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .align{
+        text-align: center;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    input{
         background-color: transparent;
         border-radius: 15px;
-        width: 80px;
-        border-color: #7e975a ;
+        border: 1px solid #97ae76;
+        border-radius: 15px;
+        width: 70px;
+        height: 30px;
+        border-color:#97ae76;
     }
+   
+
     .products{
-        border: #333;
+        border: 1px solid #3333;
     }
     .pad{
         padding: 30px;
@@ -33,9 +53,16 @@ export const CartContainer = styled.section`
         margin-bottom: 25px;
     }
     .table{
+        display: table;
         border: 2px solid #3333;
         border-collapse: collapse;
     }
+`;
+
+export const Product = styled.p`
+    font-family: playfair display,serif;
+    font-style: normal;
+    font-weight: 100;
 `;
 
 export const TitleCart= styled.h2`
