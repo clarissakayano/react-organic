@@ -39,7 +39,7 @@ export const CartContainer = styled.section`
         height: 30px;
         border-color:#97ae76;
     }
-   
+
 
     .products{
         border: 1px solid #3333;
@@ -57,9 +57,14 @@ export const CartContainer = styled.section`
         border: 2px solid #3333;
         border-collapse: collapse;
     }
+    .price{
+        font-family: roboto,sans-serif;
+        font-size: 14px;
+    }
+
 `;
 
-export const Product = styled.p`
+export const Text = styled.p`
     font-family: playfair display,serif;
     font-style: normal;
     font-weight: 100;
@@ -74,23 +79,37 @@ export const TitleCart= styled.h2`
 
 
 export const Button = styled.button`
+    display: block;
     background-color: white;
+    color: #888;
     border-radius: 25px;
-    color: #7e975a;
     padding: 12px 29px;
-    border-color: #97ae76;
     text-align: center;
     font-family: inherit;
-
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
 `;
 
 export const Button2 = styled.button`
-    background-color: #7e975a;
-    border-radius: 25px;
-    color: white;
+   background-color: #97ae76;
+   color: #fff;
+   border: 2px solid #97ae76;
+   border-radius: 25px;
     padding: 12px 29px;
     border-color: #97ae76;
     text-align: center;
-    font-family: inherit;
+    font-family: roboto,sans-serif;
+
 
 `;
+
+export const Button3 = styled.button`
+    background-color: transparent;
+    color: #97ae76;
+    border: 2px solid #97ae76;
+    border-radius: 25px;
+    padding: 12px 29px;
+    text-align: center;
+    font-family: inherit;
+    font-family: roboto,sans-serif;
+    `;

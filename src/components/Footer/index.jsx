@@ -1,5 +1,9 @@
 import logo from '../../assets/logo.png';
-import {FooterContainer, List, Button} from './styles';
+import card1 from '../../assets/card1.png';
+import card2 from '../../assets/card2.png';
+import card3 from '../../assets/card3.png';
+import card4 from '../../assets/card4.png';
+import {FooterContainer, Button, FooterEnd} from './styles';
 import {HiOutlineMail} from "react-icons/hi";
 import {BiMap} from "react-icons/bi";
 import {FiPhone} from "react-icons/fi";
@@ -10,7 +14,7 @@ import {FiPhone} from "react-icons/fi";
 
 const Footer = () => (
 <>
-    <FooterContainer className="pb-4">
+    <FooterContainer >
         <div className="container mt-4">
             <a className="navbar-brand" href="/">
                 <img src={logo} alt="Logo Organic" />
@@ -66,8 +70,36 @@ const Footer = () => (
 
             </div>
         </div>
+        <FooterEnd>
+        <div className="container">
+        <div container="row">
+        <div className="d-flex copy-right-inner">
+            <div className="text-center">
+                <p className="text-align-center">Copyright © 2017 Designed by AuThemes. All rights reserved.</p>
+            </div>
+           <div >
+            <ul>
+                <li className=" px-2">
+                    <img src={card1} />
+                </li>
+                <li className="px-2">
+                    <img src={card2} />
+                </li>
+                <li className="px-2">
+                    <img src={card3} />
+                </li>
+                <li className="px-2">
+                    <img src={card4} />
+                </li>
+            </ul>
+           </div>
 
+        </div>
+        </div>
+        </div>
+        </FooterEnd>
     </FooterContainer>
+
 </>
 
 );

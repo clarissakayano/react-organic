@@ -36,3 +36,38 @@ export const Button = styled.button`
     text-align: center;
 
 `;
+
+export const FooterEnd = styled.section`
+   background-color: #222;
+   color: #666;
+   font-family: roboto,sans-serif;
+   list-style: none;
+   padding: 20px 0;
+
+   ul li{
+    display: inline-block;
+    padding-left:0px;
+    
+   }
+
+   .copy-right-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+   @media (max-width: 991px){
+    .flex.multi-row-sm {
+    flex-wrap: wrap;
+    }
+}
+
+    @media (max-width: 991px){
+    .copy-right-inner {
+    flex-direction: column-reverse;
+}
+   }
+
+
+`;
+

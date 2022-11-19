@@ -1,4 +1,4 @@
-import {BannerCart, TitleCart, CartContainer, Button, Button2, Product} from './styles';
+import {BannerCart, TitleCart, CartContainer, Button, Button2, Text, Button3} from './styles';
 import {Link} from "react-router-dom";
 import Footer from "../../components/Footer";
 import HeaderComp from "../../components/HeaderComp";
@@ -49,7 +49,7 @@ const Cart =() => (
                         </th>
                         <th>
                             <td>
-                                <Product className="mt-4 align">Salad</Product>
+                                <Text className="mt-4 align">Salad</Text>
                             </td>
                         </th>
                         <td className="pad">0.4 kg</td>
@@ -71,7 +71,7 @@ const Cart =() => (
                         </th>
                         <th>
                             <td>
-                                <Product className="mt-4 align">Salad</Product>
+                                <Text className="mt-4 align">Salad</Text>
                             </td>
                         </th>
                         <td className="pad">0.4 kg</td>
@@ -84,7 +84,8 @@ const Cart =() => (
                     </tr>
 
                 </tbody>
-                </table>
+                
+            </table>
                 <div>
                 <div className="row">
                     <div className="col d-flex justify-content-evenly">
@@ -92,32 +93,32 @@ const Cart =() => (
                         <div><Button2>APPLY COUPON</Button2></div>
                     </div>
                     <div className="col d-flex justify-content-end">
-                        <Button>UPDATE CARD</Button>
+                        <Button3>UPDATE CARD</Button3>
                     </div>
                 </div>
                 </div>
             </div>
             <div className="container">
-                <div className="row">
-                <div  className="col col-md-8">
                 <h3 className="text">Cart Total</h3>
-            <table className="table table-bordered">
-                <tbody className="col md-8">
-                <tr>
-                    <td>Subtotal</td>
-                    <td>$</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>$</td>
-                </tr>
-            </tbody>
-            </table>
-            <div className="mb-5">
-                <Button2>PROCEED TO CHECKOUT</Button2>
-            </div>
-            </div>
-            </div>
+                <div className="row">
+                    <div  className="col col-md-3">
+                    <table className="table table-bordered">
+                        <tbody>
+                        <tr>
+                            <td><Text>Subtotal</Text></td>
+                            <td className="price">$6.31</td>
+                        </tr>
+                        <tr>
+                            <td><Text>Total</Text></td>
+                            <td className="price">$6.31</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <div className="mb-5">
+                        <Button2>PROCEED TO CHECKOUT</Button2>
+                    </div>
+                    </div>
+                </div>
             </div>
         </CartContainer>
         < Footer/>
