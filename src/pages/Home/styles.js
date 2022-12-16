@@ -8,6 +8,7 @@ export const Text2 = styled.h2`
 
 export const Text = styled.h3`
     font-family: 'Playfair Display', serif;
+    font-size: 35px;
 
 `;
 
@@ -22,6 +23,15 @@ export const BannerContainer = styled.section`
     font-family: 'Playfair Display', serif;
     color: white;
 
+    .absolute1{
+        position: absolute;
+        left: 0%;
+        top: 0px;
+}
+
+    .relative{
+        position: relative;
+    }
 `;
 
 

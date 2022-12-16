@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 export const FooterContainer = styled.section`
-    background-color: #F5F5F5;
+    background-color: #edf2f5;
     list-style: none;
 
 #bg-button {
@@ -17,6 +17,23 @@ export const FooterContainer = styled.section`
 input {
     background-color: transparent;
 }
+
+ul {
+    list-style: none;
+    display: inline-block;
+    padding-left: 0px;
+    font-family: roboto,sans-serif;
+    font-weight: 200;
+   }
+
+   li{
+    color: #666;
+    margin-bottom: 16px;
+   }
+`;
+
+export const TitleFooter = styled.h3`
+    font-family: roboto, sans-serif;
 `;
 
 export const List = styled.div`
@@ -37,6 +54,11 @@ export const Button = styled.button`
 
 `;
 
+export const Title= styled.h4`
+    font-family: roboto,sans-serif;
+    font-size: 14px;
+`;
+
 export const FooterEnd = styled.section`
    background-color: #222;
    color: #666;
@@ -44,16 +66,17 @@ export const FooterEnd = styled.section`
    list-style: none;
    padding: 20px 0;
 
-   ul li{
-    display: inline-block;
-    padding-left:0px;
-    
+   #copy{}
+
+   .mr{
+    margin-right: 0px 20px 16px;
    }
 
-   .copy-right-inner {
+   .copy-right{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 14px;
 }
 
    @media (max-width: 991px){
@@ -63,11 +86,11 @@ export const FooterEnd = styled.section`
 }
 
     @media (max-width: 991px){
-    .copy-right-inner {
+    .copy-right{
     flex-direction: column-reverse;
 }
    }
 
-
 `;
+
 

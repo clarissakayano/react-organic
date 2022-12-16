@@ -10,6 +10,7 @@ import broccoli from "../../assets/broccoli.jpg";
 import lemon from "../../assets/lemon.jpg";
 import bean from "../../assets/bean.jpg";
 import onion from "../../assets/onion.jpg";
+import spinach from "../../assets/spinach.jpg";
 import {BannerContainer,BannerContainer2, Text, Button} from "./styles";
 import CardsBlog from "../../components/CardsBlog";
 import CardsBlogRev from "../../components/CardsBlogRev";
@@ -50,46 +51,60 @@ const Home =() => (
             </div>
             <Text className="d-flex justify-content-center mt-5">Our Products</Text>
             <div className="container">
-                <div className="row row-cols-3 d-flex col-sm justify-content-center mt-5">
-                    <div className="col">
+                <div className="row row-cols-4 d-flex col-sm justify-content-center mt-5">
+                    <div className="col my-4 px-5">
                         <CardOurProducts title="Card 1"
                         image={broccoli}
                         description="Salad"
                         description1="$ 2.00"
                         />
                     </div>
-                    <div className="col">
+                    <div className="col my-4 px-5">
                         <CardOurProducts title="Card 1"
                         image={lemon}
                         description="Lemon"
                         description1="$ 2.00"
                         />
                     </div>
-                    <div className="col">
+                    <div className="col my-4 px-5">
                         <CardOurProducts title="Card 1"
                         image={bean}
                         description="Bean"
                         description1="$ 2.00"
                         />
                     </div>
-                    <div className="col">
+                    <div className="col  my-4 px-5">
                         <CardOurProducts title="Card 1"
                         image={onion}
                         description="Onion"
                         description1="$ 2.00"
                         />
                     </div>
-                    <div className="col">
+                    <div className="col  my-4 px-5">
+                        <CardOurProducts title="Card 1"
+                        image={bean}
+                        description="Bean"
+                        description1="$ 2.00"
+                        />
+                    </div>
+                    <div className="col  my-4 px-5">
+                        <CardOurProducts title="Card 1"
+                        image={onion}
+                        description="Onion"
+                        description1="$ 2.00"
+                        />
+                    </div>
+                    <div className="col my-4 px-5">
                         <CardOurProducts title="Card 1"
                         image={broccoli}
                         description="Salad"
                         description1="$ 2.00"
                         />
                     </div>
-                    <div className="col">
+                    <div className="col my-4 px-5">
                         <CardOurProducts title="Card 1"
-                        image={lemon}
-                        description="Lemon"
+                        image={spinach}
+                        description="Spinach"
                         description1="$ 2.00"
                         />
                     </div>

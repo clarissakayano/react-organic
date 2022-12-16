@@ -1,9 +1,9 @@
 import logo from '../../assets/logo.png';
-import card1 from '../../assets/card1.png';
-import card2 from '../../assets/card2.png';
-import card3 from '../../assets/card3.png';
-import card4 from '../../assets/card4.png';
-import {FooterContainer, Button, FooterEnd} from './styles';
+import cred1 from '../../assets/card1.png';
+import cred2 from '../../assets/card2.png';
+import cred3 from '../../assets/card3.png';
+import cred4 from '../../assets/card4.png';
+import {FooterContainer, Button, FooterEnd, Title} from './styles';
 import {HiOutlineMail} from "react-icons/hi";
 import {BiMap} from "react-icons/bi";
 import {FiPhone} from "react-icons/fi";
@@ -15,47 +15,53 @@ import {FiPhone} from "react-icons/fi";
 const Footer = () => (
 <>
     <FooterContainer >
-        <div className="container mt-4">
-            <a className="navbar-brand" href="/">
-                <img src={logo} alt="Logo Organic" />
-            </a>
-        </div>
-        <div className="container">
-            <div className="row flex-row row-cols-sm-2 row-cols-md-3 row-cols-lg-5 pt-5 ">
-                <div className='col'>
-                    <div>
-                    <BiMap/> 379 5th Ave New York, NYC 10018
-                    </div>
-                    <div>
-                    <FiPhone/> (+1) 96 716 6879
-                    </div>
-                    <div>
-                    <HiOutlineMail/> contact@site.com
-                    </div>
+        <div className="container mb-3">
+            <div className="row flex-row row-cols-sm-2 row-cols-md-5 row-cols-lg-6 pt-5 ">
+                <div className="">
+                <a className="navbar-brand" href="/">
+                    <img className="mb-3" src={logo} alt="Logo Organic" />
+                </a>
+                <div className='d-flex'>
+                    <ul>
+                        <li className="mb-2">
+                        <BiMap className="mr-4"/> 379 5th Ave New York, NYC 10018
+                        </li>
+                        <li className="mb-2">
+                        <FiPhone/> (+1) 96 716 6879
+                        </li>
+                        <li>
+                        <HiOutlineMail /> contact@site.com
+                        </li>
+                    </ul>
+
                 </div>
-                <div className='col'>
-                    <h4>SHOP</h4>
+                </div>
+                <div className="row">
+
+                </div>
+                <div className='col' >
+                    <Title>SHOP</Title>
                     <li>Food</li>
                     <li>Farm</li>
                     <li>Health</li>
                     <li>Oragnic</li>
                 </div>
                 <div className='col'>
-                    <h4>SUPPORT</h4>
+                    <Title>SUPPORT</Title>
                     <li>Contact US</li>
                     <li>FAQ</li>
                     <li>Privacy Policy</li>
                     <li>Blog</li>
                 </div>
                 <div className='col'>
-                    <h4>MY ACCOUNT</h4>
+                    <Title>MY ACCOUNT</Title>
                     <li>Sign In</li>
                     <li>My Cart</li>
                     <li>My Wishlist</li>
                     <li>Check Out</li>
                 </div>
-                <div className='col'>
-                    <h4>NEWSLETTER</h4>
+                <div>
+                    <Title>NEWSLETTER</Title>
                     <p>Subscribe now to get daily updates</p>
                     <form>
                     <div id="bg-button" className="col-auto border d-flex">
@@ -67,33 +73,30 @@ const Footer = () => (
                     </div>
                     </form>
                 </div>
-
             </div>
+
         </div>
         <FooterEnd>
         <div className="container">
         <div container="row">
-        <div className="d-flex copy-right-inner">
-            <div className="text-center">
-                <p className="text-align-center">Copyright © 2017 Designed by AuThemes. All rights reserved.</p>
+        <div className="d-flex copy-right text-center">
+            <div>
+                <span className="text-align-center">Copyright © 2017 Designed by AuThemes. All rights reserved.</span>
             </div>
-           <div >
-            <ul>
-                <li className=" px-2">
-                    <img src={card1} />
-                </li>
-                <li className="px-2">
-                    <img src={card2} />
-                </li>
-                <li className="px-2">
-                    <img src={card3} />
-                </li>
-                <li className="px-2">
-                    <img src={card4} />
-                </li>
-            </ul>
-           </div>
-
+            <div className="d-flex">
+                <div className=" px-2">
+                    <img src={cred1} />
+                </div>
+                <div className="px-2">
+                    <img src={cred2} />
+                </div>
+                <div className="px-2">
+                    <img src={cred3} />
+                </div>
+                <div className="px-2">
+                    <img src={cred4} />
+                </div>
+            </div>
         </div>
         </div>
         </div>

@@ -1,4 +1,4 @@
-import {BannerCart, TitleCart, CartContainer, Button, Button2, Text, Button3} from './styles';
+import {BannerCart, TitleCart, CartContainer, Button2, Text, Button3, Product, TableStyle, ButtonCheck, Input} from './styles';
 import {Link} from "react-router-dom";
 import Footer from "../../components/Footer";
 import HeaderComp from "../../components/HeaderComp";
@@ -26,6 +26,7 @@ const Cart =() => (
                 </div>
             </BannerCart>
             <div className="container mt-5">
+                <div className="d-none d-lg-block">
                 <table className="table">
                 <thead className="bg-color">
                     <tr>
@@ -54,11 +55,11 @@ const Cart =() => (
                         </th>
                         <td className="pad">0.4 kg</td>
                         <td className="pad">
-                            <input className="btn-color" placeholder='1'></input>
+                            <input className="btn-color text-center inputcart" placeholder='1'></input>
                         </td>
                         <td className="pad">$2.26</td>
                         <td className="pad">$2.26</td>
-                        <td className="pad"><RiCloseCircleFill color='#97ae76' size={20}/></td>
+                        <td className="pad"><RiCloseCircleFill color='#97ae76' size={25}/></td>
                     </tr>
 
                     <tr>
@@ -76,32 +77,131 @@ const Cart =() => (
                         </th>
                         <td className="pad">0.4 kg</td>
                         <td className="pad">
-                            <input className="btn-color" placeholder='1'></input>
+                            <input className="btn-color text-center inputcart" placeholder='1'></input>
                         </td>
                         <td className="pad">$2.26</td>
                         <td className="pad">$2.26</td>
-                        <td className="pad"><RiCloseCircleFill color='#97ae76' size={20}/></td>
+                        <td className="pad"><RiCloseCircleFill color='#97ae76' size={25}/></td>
                     </tr>
 
                 </tbody>
-                
+                <tfoot>
+                    <tr className="row-col-md-4 mt-3 text-center">
+                        <td >
+                            <div className="mb-3 mt-3">
+                                <Input placeholder="Cuppon Code"/>
+                            </div>
+                        </td>
+                        <td colspan="2">
+                            <div className="mb-3 mt-3">
+                                <Button2>APPLY COUPON</Button2>
+                            </div>
+                            
+                        </td>
+                        <td></td>
+                        <td></td>
+                        
+                        <td className="text-center" colspan="3"><Button3>UPDATE CARD</Button3></td>
+                    </tr>
+                </tfoot>
+
             </table>
-                <div>
-                <div className="row">
-                    <div className="col d-flex justify-content-evenly">
-                        <div><Button>Cuppon Code</Button></div>
-                        <div><Button2>APPLY COUPON</Button2></div>
-                    </div>
-                    <div className="col d-flex justify-content-end">
-                        <Button3>UPDATE CARD</Button3>
-                    </div>
-                </div>
-                </div>
             </div>
+
+            <TableStyle className="d-lg-none">
+            <div id="border">
+            <table className="table table-striped table-style">
+                <tbody>
+                    <tr>
+                    <th scope="col">Product:</th>
+                    <td colspan="1"></td>
+                    <td className="text-end"><Product>Salad</Product></td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">Weight:</th>
+                    <td colspan="1"></td>
+                    <td className="text-end">4.4 kg</td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">Quantity:</th>
+                    <td colspan="1"></td>
+                    <td className="text-end">
+                    <input className="btn-color text-center inputcart" placeholder='1'></input>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <th scope="row">Price:</th>
+                    <td colspan="1"></td>
+                    <td className="text-end">$2.26</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Total:</th>
+                    <td colspan="1"></td>
+                    <td className="text-end">$2.26</td>
+
+                    </tr>
+
+                    <tr>
+                    <th scope="row"></th>
+                    <td colspan="1"></td>
+                    <td className="text-end"><RiCloseCircleFill color='#97ae76' size={20}/></td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                <tr>
+                <td colspan="1" className="row">
+
+                    <div>
+
+                        <div className="col row-cols-1 row-cols-sm-8">
+                            <div className="d-flex justify-content-center row-cols-1 row-cols-sm-8 mx-5 mb-3 mt-3" >
+                                <Input placeholder="Coupon Code"/>
+                            </div>
+                            <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-5 mb-3">
+                                <Button2 >APPLY COUPON</Button2>
+                            </div>
+                        </div>
+                    </div>
+                <td colspan="7" className="text-end">
+                    <div className="col row-cols-1 row-cols-sm-8">
+                        <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-5">
+                        <Button3 >UPDATE CARD</Button3>
+                    </div>
+                    </div>
+                </td>
+                </td>
+                </tr>
+                </tfoot>
+            </table>
+            </div>
+            </TableStyle>
+            </div>
+
             <div className="container">
-                <h3 className="text">Cart Total</h3>
-                <div className="row">
-                    <div  className="col col-md-3">
+                <h3 className="text py-3">Cart Total</h3>
+                <div className="d-lg-none">
+                    <table className="table">
+                        <tbody >
+                        <tr>
+                            <th className="text-cart ">Subtotal</th>
+                            <td className="price-1 text-end">$6.31</td>
+                        </tr>
+                        <tr>
+                            <th className="text-cart">Total</th>
+                            <td className="price-1 text-end">$6.31</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <div className="mb-5">
+                        <ButtonCheck>PROCEED TO CHECKOUT</ButtonCheck>
+                    </div>
+                    </div>
+
+                    <div  className="col col-md-8 d-lg-block d-md-none">
                     <table className="table table-bordered">
                         <tbody>
                         <tr>
@@ -116,7 +216,6 @@ const Cart =() => (
                     </table>
                     <div className="mb-5">
                         <Button2>PROCEED TO CHECKOUT</Button2>
-                    </div>
                     </div>
                 </div>
             </div>

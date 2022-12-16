@@ -32,7 +32,7 @@ const Header  = () =>(
                                 <Link className="nav-link  text-color" to="/contato">CONTACT</Link>
                             </li>
                             <li className="nav-item  text-color">
-                            <Link to="/carrinho" className="px-4 mx-4"><AiOutlineShoppingCart /></Link>
+                            <Link to="/carrinho" className=""><AiOutlineShoppingCart /></Link>
                             </li>
                         </ul>
                     </div>
