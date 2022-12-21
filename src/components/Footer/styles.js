@@ -7,6 +7,9 @@ export const FooterContainer = styled.section`
     background-color: #edf2f5;
     list-style: none;
 
+
+
+
 #bg-button {
     background-color: white;
     border-radius: 25px;
@@ -30,7 +33,8 @@ ul {
     color: #666;
     margin-bottom: 16px;
    }
-`;
+
+`
 
 export const TitleFooter = styled.h3`
     font-family: roboto, sans-serif;
@@ -92,5 +96,38 @@ export const FooterEnd = styled.section`
    }
 
 `;
+
+export const BorderInput = styled.section`
+
+
+&:focus{
+        border-color: #97ae76;
+        outline: none;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+    }
+
+
+
+
+`;
+
+
+export const InputColor = styled.input`
+    font-family: roboto, sans-serif;
+    border-radius: 25px;
+    transition: all .3s ease-in-out;
+    border: 1px solid #ccc;
+    padding: 10px 9px;
+    &:focus{
+        border-color: #97ae76;
+        outline: none;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+        &:before {
+    content:
+   svg;
+  }
+
+    }
+`
 
 

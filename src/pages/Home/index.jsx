@@ -51,7 +51,7 @@ const Home =() => (
             </div>
             <Text className="d-flex justify-content-center mt-5">Our Products</Text>
             <div className="container">
-                <div className="row row-cols-4 d-flex col-sm justify-content-center mt-5">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 d-flex justify-content-center mt-5">
                     <div className="col my-4 px-5">
                         <CardOurProducts title="Card 1"
                         image={broccoli}

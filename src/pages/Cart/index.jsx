@@ -1,11 +1,11 @@
 import {BannerCart, TitleCart, CartContainer, Button2, Text, Button3, Product, TableStyle, ButtonCheck, Input} from './styles';
-import {Link} from "react-router-dom";
-import Footer from "../../components/Footer";
+
 import HeaderComp from "../../components/HeaderComp";
 import CardShop from "../../components/CardShop";
 import lettuce from "../../assets/lettuce.jpg";
 import apple from "../../assets/apple.jpg";
 import { RiCloseCircleFill} from "react-icons/ri";
+import Footer from '../../components/Footer';
 
 
 
@@ -108,75 +108,64 @@ const Cart =() => (
             </table>
             </div>
 
-            <TableStyle className="d-lg-none">
-            <div id="border">
-            <table className="table table-striped table-style">
-                <tbody>
-                    <tr>
-                    <th scope="col">Product:</th>
-                    <td colspan="1"></td>
-                    <td className="text-end"><Product>Salad</Product></td>
-                    </tr>
+            <TableStyle className="container d-lg-none">
+                <div id="border">
+                <table className="table table-striped table-style">
+                    <tbody>
+                        <tr>
+                        <th scope="col">Product:</th>
+                        <td colspan="1"></td>
+                        <td className="text-end"><Product>Salad</Product></td>
+                        </tr>
 
-                    <tr>
-                    <th scope="row">Weight:</th>
-                    <td colspan="1"></td>
-                    <td className="text-end">4.4 kg</td>
-                    </tr>
+                        <tr>
+                        <th scope="row">Weight:</th>
+                        <td colspan="1"></td>
+                        <td className="text-end">4.4 kg</td>
+                        </tr>
 
-                    <tr>
-                    <th scope="row">Quantity:</th>
-                    <td colspan="1"></td>
-                    <td className="text-end">
-                    <input className="btn-color text-center inputcart" placeholder='1'></input>
-                    </td>
-                    </tr>
+                        <tr>
+                        <th scope="row">Quantity:</th>
+                        <td colspan="1"></td>
+                        <td className="text-end">
+                        <input className="btn-color text-center inputcart" placeholder='1'></input>
+                        </td>
+                        </tr>
 
-                    <tr>
-                    <th scope="row">Price:</th>
-                    <td colspan="1"></td>
-                    <td className="text-end">$2.26</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">Total:</th>
-                    <td colspan="1"></td>
-                    <td className="text-end">$2.26</td>
+                        <tr>
+                        <th scope="row">Price:</th>
+                        <td colspan="1"></td>
+                        <td className="text-end">$2.26</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">Total:</th>
+                        <td colspan="1"></td>
+                        <td className="text-end">$2.26</td>
 
-                    </tr>
+                        </tr>
 
-                    <tr>
-                    <th scope="row"></th>
-                    <td colspan="1"></td>
-                    <td className="text-end"><RiCloseCircleFill color='#97ae76' size={20}/></td>
-                    </tr>
+                        <tr>
+                        <th scope="row"></th>
+                        <td colspan="1"></td>
+                        <td className="text-end"><RiCloseCircleFill color='#97ae76' size={20}/></td>
+                        </tr>
 
-                </tbody>
-                <tfoot>
-                <tr>
-                <td colspan="1" className="row">
-
-                    <div>
-
-                        <div className="col row-cols-1 row-cols-sm-8">
+                    </tbody>
+                    <tfoot>
+                    <tr colspan="1" className="row">
+                        
                             <div className="d-flex justify-content-center row-cols-1 row-cols-sm-8 mx-5 mb-3 mt-3" >
                                 <Input placeholder="Coupon Code"/>
                             </div>
                             <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-5 mb-3">
                                 <Button2 >APPLY COUPON</Button2>
                             </div>
+                            <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-5 mb-3">
+                            <Button3 >UPDATE CARD</Button3>
                         </div>
-                    </div>
-                <td colspan="7" className="text-end">
-                    <div className="col row-cols-1 row-cols-sm-8">
-                        <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-5">
-                        <Button3 >UPDATE CARD</Button3>
-                    </div>
-                    </div>
-                </td>
-                </td>
-                </tr>
-                </tfoot>
-            </table>
+                    </tr>
+                    </tfoot>
+                </table>
             </div>
             </TableStyle>
             </div>
@@ -201,7 +190,7 @@ const Cart =() => (
                     </div>
                     </div>
 
-                    <div  className="col col-md-8 d-lg-block d-md-none">
+                    <div  className="col col-md-8 d-none d-lg-block">
                     <table className="table table-bordered">
                         <tbody>
                         <tr>
@@ -220,7 +209,7 @@ const Cart =() => (
                 </div>
             </div>
         </CartContainer>
-        < Footer/>
+        <Footer/>
     </>
 );
 

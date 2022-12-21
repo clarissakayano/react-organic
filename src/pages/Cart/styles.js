@@ -12,7 +12,7 @@ export const BannerCart = styled.section`
 `;
 export const TableStyle =styled.div`
 .table-style>:not(caption)>*>* {
-    padding: 0.5rem 0.5rem;
+   
     background-color: white;
     border-bottom-width: 1px;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
@@ -98,7 +98,6 @@ tbody{
         font-size: 16px;
         vertical-align: middle;
     }
-   
 
     .table-text {
     content: attr(data-title) ": ";
@@ -123,6 +122,16 @@ tbody{
         display: grid;
     }
 
+    tfoot {
+        border-collapse: collapse;
+        .row-wrap {
+	    flex-flow: row wrap;
+}
+    }
+
+// @media screen and (max-width: 991px){
+ //   .table tbody td{display: flex;}
+//}
 `;
 
 export const Text = styled.p`

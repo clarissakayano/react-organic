@@ -6,6 +6,7 @@ import NotFound from "../pages/NotFound";
 import Shop from "../pages/Shop";
 import ShopCart from "../pages/Shop";
 import Contact from "../pages/Contact";
+import ShopDetail from "../pages/ShopDetail";
 
 
 
@@ -17,8 +18,9 @@ const Routes =() => (
             <Route path="/about" element={<About />} />
             <Route path="/carrinho" element={<Cart />} />
             <Route path="/produtos" element={<Shop />} />
+            <Route path="/detalhes" element={<ShopDetail />} />
             <Route path="/contato" element={<Contact />} />
-            <Route path="/*" element={<NotFound />} />
+            <Route path="/*" element={<Shop />} />
         </Router>
     </BrowserRouter>
 );

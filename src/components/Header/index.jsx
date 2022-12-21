@@ -69,6 +69,7 @@ const Header  = () =>(
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/contato">CONTACT</Link>
                                 </li>
+                                <Link to="/carrinho" className="nav-link">CART <AiOutlineShoppingCart className="mx-4" /></Link>
                             </ul>
                         </div>
                         </div>
