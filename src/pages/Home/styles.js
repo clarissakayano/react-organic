@@ -2,6 +2,24 @@ import styled from "styled-components";
 import folhas from "../../assets/folhas.jpg";
 import orange from "../../assets/bannerhome3.jpg";
 
+
+
+export const Main = styled.section`
+
+
+h3:before{
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+}
+
+`;
+
 export const Text2 = styled.h2`
     font-family: 'Playfair Display', serif;
 `;
@@ -11,7 +29,6 @@ export const Text = styled.h3`
     font-size: 35px;
 
 `;
-
 export const BannerContainer = styled.section`
     background-image: url(${folhas});
     background-repeat: no-repeat;

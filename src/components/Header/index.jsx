@@ -9,7 +9,7 @@ const Header  = () =>(
 
     <>
 
-        <BannerContainer className=' flex-grow-1 '>
+        <BannerContainer className='flex-grow-1'>
             <header>
                 <div className="container py-4 d-flex justify-content-3 align-items-center">
                     <div className="col-md-6 p-4 d-none d-md-block d-lg-block d-xl-block">
@@ -30,6 +30,9 @@ const Header  = () =>(
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link  text-color" to="/contato">CONTACT</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link  text-color" to="/checkout">CHECKOUT</Link>
                             </li>
                             <li className="nav-item  text-color">
                             <Link to="/carrinho" className=""><AiOutlineShoppingCart /></Link>
@@ -68,6 +71,9 @@ const Header  = () =>(
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/contato">CONTACT</Link>
+                                </li>
+                                <li className="nav-item">
+                                <Link className="nav-link  text-color" to="/checkout">CHECKOUT</Link>
                                 </li>
                                 <Link to="/carrinho" className="nav-link">CART <AiOutlineShoppingCart className="mx-4" /></Link>
                             </ul>

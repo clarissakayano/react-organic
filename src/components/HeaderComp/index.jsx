@@ -28,6 +28,9 @@ const Header  = () =>(
                     <li className="nav-item">
                         <Link className="nav-link  text-color" to="/contato">CONTACT</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link  text-color" to="/checkout">CHECKOUT</Link>
+                    </li>
                     <li className="nav-item text-color">
                     <Link to="/carrinho"><AiOutlineShoppingCart /></Link>
                     </li>
@@ -65,6 +68,12 @@ const Header  = () =>(
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/contato">CONTACT</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/checkout">CHECKOUT</Link>
+                        </li>
+                        <li className="nav-item text-color">
+                            <Link to="/carrinho"><AiOutlineShoppingCart /></Link>
                         </li>
                     </ul>
                 </div>

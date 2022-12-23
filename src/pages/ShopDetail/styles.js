@@ -36,12 +36,38 @@ h3:after {
 
 .border {
     border-color: #7e975a;
+    border-width: 1px;
     border-top: 20px ;
     border-bottom: 1px;
     padding: 10px 30px;
 }
 
+.description {
+    font-family: roboto,sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.menudesc {
+    font-family: roboto,sans-serif;
+    font-size: 18px;
+}
+
+ul {
+    font-size: 14px;
+    font-family: roboto,sans-serif;
+}
+
 `;
+export const Color = styled.span`
+    font-family: roboto,sans-serif;
+    color: #7e975a;
+    font-size: 14px;
+`;
+export const Categ =styled.span`
+    font-family: roboto,sans-serif;
+    color: #333;
+    font-size: 14px;
+`
 
 
 export const TitleShop= styled.h1`
@@ -131,10 +157,8 @@ export const ButtonCart = styled.button`
 `;
 
 export const Buttonlove = styled.button`
-    padding: 0;
+    padding: 10px 20px;
     background-color: transparent;
-    width: 48px;
-    height: 48px;
     font-size: 18px;
     transition: all .3s ease-in-out;
     float: left;

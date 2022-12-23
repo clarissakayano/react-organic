@@ -11,7 +11,7 @@ import lemon from "../../assets/lemon.jpg";
 import bean from "../../assets/bean.jpg";
 import onion from "../../assets/onion.jpg";
 import spinach from "../../assets/spinach.jpg";
-import {BannerContainer,BannerContainer2, Text, Button} from "./styles";
+import {BannerContainer,BannerContainer2, Text, Button, Main} from "./styles";
 import CardsBlog from "../../components/CardsBlog";
 import CardsBlogRev from "../../components/CardsBlogRev";
 import tempero from "../../assets/blog-card-temp.jpg";
@@ -24,7 +24,7 @@ import avocado from "../../assets/blog-card-avocado.jpg";
 const Home =() => (
     <>
         <Header />
-        <main>
+        <Main>
             <div className="container">
                 <div className="row row-cols-1 row-cols-sm-1 row-cols-md-3">
                     <div className="col">
@@ -51,7 +51,7 @@ const Home =() => (
             </div>
             <Text className="d-flex justify-content-center mt-5">Our Products</Text>
             <div className="container">
-                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 d-flex justify-content-center mt-5">
+                <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 d-flex justify-content-center mt-5">
                     <div className="col my-4 px-5">
                         <CardOurProducts title="Card 1"
                         image={broccoli}
@@ -172,7 +172,7 @@ const Home =() => (
                 </div>
             </div>
             </BannerContainer2>
-        </main>
+        </Main>
         <Footer />
     </>
 );
