@@ -150,14 +150,14 @@ const Cart =() => (
 
                     </tbody>
                     <tfoot>
-                    <tr className="row ">
-                            <div className="row-cols-1 row-cols-sm-8 mx-5 mb-3 mt-3" >
+                    <tr className="row justify-content-start">
+                            <div className="row-cols-1 row-cols-sm-8 mx-3 mb-3 mt-3" >
                                 <Input placeholder="Coupon Code"/>
                             </div>
-                            <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-5 mb-3">
+                            <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-3 mb-3">
                                 <Button2 >APPLY COUPON</Button2>
                             </div>
-                            <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-5 mb-3">
+                            <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-3 mb-3">
                             <Button3 >UPDATE CARD</Button3>
                         </div>
                     </tr>
