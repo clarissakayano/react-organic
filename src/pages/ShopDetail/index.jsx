@@ -65,8 +65,6 @@ const ShopDetail =() => {
                                 +
                             </ButtonAdd>
                             </div>
-
-                            
                             <div className="d-flex justify-content-evenly mt-2 px-2">
                                 <ButtonCart >ADD TO CART</ButtonCart>
                             </div>
@@ -90,24 +88,24 @@ const ShopDetail =() => {
 
                             <div className="d-flex mt-4">
                                 <div>
-                                    <ImFacebook color="#666" size={18}/>
+                                <a href="https://www.facebook.com/" target="_blank"><ImFacebook color="#666" size={18}/></a>
                                 </div>
                                 <div className="mx-2">
-                                    <ImPinterest color="#666" size={18}/>
+                                <a href="https://br.pinterest.com/" target="_blank"><ImPinterest color="#666" size={18}/></a>
                                 </div>
                                 <div className="mx-2">
-                                    <ImTwitter color="#666" size={18}/>
+                                <a href="https://twitter.com/i/flow/login" target="_blank"><ImTwitter color="#666" size={18}/></a>
                                 </div>
                                 <div className="mx-2">
                                     <ImGooglePlus color="#666" size={20}/>
                                 </div>
                                 <div className="mx-2">
-                                    <RiInstagramLine color="#666" size={19}/>
+                                <a href="https://www.instagram.com/" target="_blank"><RiInstagramLine color="#666" size={19}/></a>
+
                                 </div>
 
                             </div>
                         </div>
-                    
                         <div className="row row-cols-1 row-cols-md-2 mt-5">
                             <div className="col">
                                 <p className="description">Description</p>
