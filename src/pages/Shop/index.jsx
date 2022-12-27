@@ -32,7 +32,7 @@ const ShopCart =() => (
                 </div>
             </BannerShop>
             <div className="container">
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center mt-5 g-5 mb-5 text-center">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center mt-5 g-4 mb-5 text-center">
                     <div className="col d-flex">
                         <CardShop
                         title="Salad"
