@@ -7,6 +7,7 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { BorderInput } from "../../components/Footer/styles";
 import {useState} from 'react'
 import groupcard from "../../assets/groupcard.png"
+import { Link } from "react-router-dom";
 
 
 
@@ -38,12 +39,12 @@ const Checkout = () => {
             </BannerCheckout>
             <div className="container mt-5">
                 <div className="info">
-                   <AiOutlineCheck  className="me-2" /> <span>Returning customer? </span>
-                    <a href="/login" className="green">Click here to login</a>
+                   <AiOutlineCheck  className="me-2" /><span>Returning customer? </span>
+                   <Link className="green mx-2" to="/login">Click here to login</Link>
                 </div>
                 <div className="info">
-                   <AiOutlineCheck  className="me-2" /> <span>Have a coupon?</span>
-                    <a href="/carrinho" className="green"> Click here to enter your code</a>
+                   <AiOutlineCheck  className="me-2" /><span>Have a coupon?</span>
+                   <Link className="green mx-2" to="/carrinho">Click here to enter your code</Link>
                 </div>
                 <div>
                 <Text>Billing Details</Text>
