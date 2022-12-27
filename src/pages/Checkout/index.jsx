@@ -1,11 +1,14 @@
 
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import { BannerCheckout, MainCheckout, Text, TitleCheck } from "./styles";
+import { BannerCheckout, ButtonPlace, MainCheckout, Text, TitleCheck } from "./styles";
 import HeaderComp from "../../components/HeaderComp";
 import { AiOutlineCheck } from "react-icons/ai";
 import { BorderInput } from "../../components/Footer/styles";
 import {useState} from 'react'
+import groupcard from "../../assets/groupcard.png"
+
+
 
 
 
@@ -36,39 +39,39 @@ const Checkout = () => {
             <div className="container mt-5">
                 <div className="info">
                    <AiOutlineCheck  className="me-2" /> <span>Returning customer? </span>
-                    <a href="/" className="green">Click here to login</a>
+                    <a href="/login" className="green">Click here to login</a>
                 </div>
                 <div className="info">
                    <AiOutlineCheck  className="me-2" /> <span>Have a coupon?</span>
-                    <a href="/" className="green"> Click here to enter your code</a>
+                    <a href="/carrinho" className="green"> Click here to enter your code</a>
                 </div>
-            <div>
+                <div>
                 <Text>Billing Details</Text>
                 </div>
-                <form class="row g-3">
-                <div class="col-md-6">
-                    <label for="inputName" class="form-label">First Name *</label>
-                    <input type="name" class="form-control" id="inputName"/>
+                <form className="row g-3">
+                <div className="col-md-6">
+                    <label for="inputName" className="form-label">First Name *</label>
+                    <input type="name" className="form-control" id="inputName"/>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputLastName" class="form-label">Last Name*</label>
-                    <input type="last nmame" class="form-control" id="inputLastName"/>
+                <div className="col-md-6">
+                    <label for="inputLastName" className="form-label">Last Name*</label>
+                    <input type="last nmame" className="form-control" id="inputLastName"/>
                 </div>
-                <div class="col-12">
-                    <label for="inputCompany" class="form-label">Company Name</label>
-                    <input type="text" class="form-control" id="inputCompany"/>
-                    </div>
-                    <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email Address *</label>
-                    <input type="email" class="form-control" id="inputEmail4"/>
+                <div className="col-12">
+                    <label for="inputCompany" className="form-label">Company Name</label>
+                    <input type="text" className="form-control" id="inputCompany"/>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputphone" class="form-label">Phone *</label>
-                    <input type="phone" class="form-control" id="inputphone"/>
+                <div className="col-md-6">
+                    <label for="inputEmail4" className="form-label">Email Address *</label>
+                    <input type="email" className="form-control" id="inputEmail4"/>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Country *</label>
-                    <select id="inputState" class="form-select">
+                <div className="col-md-6">
+                    <label for="inputphone" className="form-label">Phone *</label>
+                    <input type="phone" className="form-control" id="inputphone"/>
+                </div>
+                <div className="col-md-6">
+                    <label for="inputEmail4" className="form-label">Country *</label>
+                    <select id="inputState" className="form-select grey">
                     <option selected>Brasil</option>
                     <option value="Brasil" selected="selected">Brasil</option>
                     <option value="Afeganistão">Afeganistão</option>
@@ -323,27 +326,27 @@ const Checkout = () => {
                     <option></option>
                     </select>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Address*</label>
-                    <input type="password" class="form-control" id="inputPassword4"/>
+                <div className="col-md-6">
+                    <label for="inputPassword4" className="form-label">Address*</label>
+                    <input type="password" className="form-control" id="inputPassword4"/>
                 </div>
-                <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Town / City *</label>
-                    <input type="text" class="form-control" id="inputAddress2" />
+                <div className="col-12">
+                    <label for="inputAddress2" className="form-label">Town / City *</label>
+                    <input type="text" className="form-control" id="inputAddress2" />
                     </div>
-                    <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Postcode / ZIP</label>
-                    <input type="email" class="form-control" id="inputEmail4"/>
+                    <div className="col-md-6">
+                    <label for="inputEmail4" className="form-label">Postcode / ZIP</label>
+                    <input type="email" className="form-control" id="inputEmail4"/>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Province</label>
-                    <input type="password" class="form-control" id="inputPassword4"/>
+                <div className="col-md-6">
+                    <label for="inputPassword4" className="form-label">Province</label>
+                    <input type="password" className="form-control" id="inputPassword4"/>
                 </div>
 
-                <div class="col-12">
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck"/>
-                    <label class="form-check-label mx-2" for="gridCheck">
+                <div className="col-12">
+                    <div className="form-check">
+                    <input className="form-check-input" type="checkbox" id="gridCheck"/>
+                    <label className="form-check-label mx-2" for="gridCheck">
                         Check an account?
                     </label>
                     </div>
@@ -352,66 +355,77 @@ const Checkout = () => {
                 <div className="mt-4">
                     <Text>Your order</Text>
                 </div>
-
-                <table class="table table-bordered">
-                    <thead>
-                    <tr>
-                        <th scope="col">Product</th>
-                        <th scope="col">Total</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                    <td scope="row">Salad x1</td>
-                    <td>$2.26</td>
-                    </tr>
-                    <tr>
-                    <td scope="row">Apple x1</td>
-                    <td>$4.05</td>
-                     </tr>
-                     <tr>
-                        <th scope="col">Subtotal</th>
-                        <th scope="col">$6.31</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">Shipping</th>
-                        <th scope="col">Flat rate</th>
+                <div>
+                    <table className="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td scope="row">Salad x1</td>
+                        <td>$2.26</td>
                         </tr>
                         <tr>
-                        <th scope="col">Total</th>
-                        <th scope="col">$6.31</th>
-                    </tr>
-                    </tbody>
-                </table>
-                    <div className="col-md-12">
-                        <label className="form-label">Show Details</label>
-                        <div>
-                            Check Payments <input type="radio" name="userdetail" value="yes" onClick={handleshow} />
-                            PayPal <input type="radio" name="userdetail" value="no" checked={showhide==='no'} onClick={handleshow} />
+                        <td scope="row">Apple x1</td>
+                        <td>$4.05</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">Subtotal</th>
+                            <th scope="col">$6.31</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Shipping</th>
+                            <th scope="col">Flat rate</th>
+                            </tr>
+                            <tr>
+                            <th scope="col">Total</th>
+                            <th scope="col">$6.31</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    <div className="col-md-12 text mt-4 mb-5">
+
+                        <div className="mb-4 mt-5">
+                        <input type="radio" name="userdetail" value="yes" onClick={handleshow} />
+                        <span className="mx-3 me-4 grey">Check Payments</span>
                         </div>
-                    </div>
-                    {
+                        {
                         showhide==='yes' &&(
-                            <div className="col-md-12">
-                                <div className="info">
-                                    <span>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</span>
+                            <div className="col">
+                                <div className="info pay">
+                                    <span>Please send a check to Store Name, Store Street, Store Town, Store State
+                                        / County, Store Postcode.</span>
                             </div>
                             </div>
                         )
                     }
 
-                    {
+                        <div className="mb-4">
+                        <input type="radio" name="userdetail" value="no" checked={showhide==='no'} onClick={handleshow} />
+                        <span className="mx-3 me-4 grey">PayPal</span><img src={groupcard} /><span className="grey">What is a Paypal</span>
+                        </div>
+
+
+                        {
                         showhide==='no' &&(
-                            <div className="col-md-12">
-                                <div className="info">
+                            <div className="col">
+                                <div className="info pay">
                                     <span>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</span>
                             </div>
                             </div>
                         )
                     }
+                        <div className="mb-3">
+                            <ButtonPlace className="btn">PLACE ORDER</ButtonPlace>
+                        </div>
+
+                    </div>
             </div>
         </MainCheckout>
-        
     <Footer />
 </>
 )

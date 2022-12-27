@@ -3,7 +3,7 @@ import cred1 from '../../assets/card1.png';
 import cred2 from '../../assets/card2.png';
 import cred3 from '../../assets/card3.png';
 import cred4 from '../../assets/card4.png';
-import {FooterContainer, Button, FooterEnd, Title, InputColor, BorderInput} from './styles';
+import {FooterContainer, Button, FooterEnd, Title, InputColor, BorderInput, Style} from './styles';
 import {HiOutlineMail} from "react-icons/hi";
 import {BiMap} from "react-icons/bi";
 import {FiPhone} from "react-icons/fi";
@@ -42,57 +42,48 @@ const Footer = () => (
                 <hr/>
                 <div>
                     <p><Title className="mb-4">SHOP</Title></p>
-                    <div className="d-flex justify-content-between d-lg-block">
-                        <p>Food</p>
-                        <p>Farm</p>
-                        <p>Health</p>
-                        <p>Organic</p>
+                    <div className="d-flex justify-content-between d-lg-block grey">
+                        <Style>Food</Style>
+                        <Style>Farm</Style>
+                        <Style>Health</Style>
+                        <Style>Organic</Style>
                     </div>
                 </div>
                     <hr />
                     <div>
                         <Title className="mb-4">SUPPORT</Title>
                         <div className="d-flex justify-content-between d-lg-block">
-                            <p>Contact Us</p>
-                            <p>FAQ</p>
-                            <p>Privacy Policy</p>
-                            <p>Blog</p>
+                            <Style>Contact Us</Style>
+                            <Style>FAQ</Style>
+                            <Style>Privacy Policy</Style>
+                            <Style>Blog</Style>
                         </div>
                     </div>
                     <hr />
                     <div>
                         <Title className="mb-4">MY ACCOUNT</Title>
                         <div className="d-flex justify-content-between d-lg-block">
-                        <p>Sign In</p>
-                        <p>My Cart</p>
-                        <p>My Wishlist</p>
-                        <p>Check Out</p>
+                        <Style>Sign In</Style>
+                        <Style>My Cart</Style>
+                        <Style>My Wishlist</Style>
+                        <Style>Check Out</Style>
                     </div>
                 </div>
                 <hr/>
                 <form>
                     <div>
                         <Title>NEWSLETTER</Title>
-                        <p>Subscribe now to get daily updates</p>
-                    <BorderInput id="bg-button" className="col-auto form-group border-0 d-flex left-inner-addon">
-                        
-                        
-                        <InputColor type="email" className="" placeholder="Your Email.."/>
-                        <Button type="submit" className="btn btn-primary"><HiOutlineMail/></Button>
-                   
-                    </BorderInput>
+                        <Style>Subscribe now to get daily updates</Style>
+                        <BorderInput id="bg-button" className="col-auto form-group border-0 d-flex left-inner-addon">
 
-                    <div className=" py-1">
-                        
-                        <InputColor type="email" className="ms-3 px-3" placeholder="Your Email.."/>
-                        <Button type="submit" className="btn btn-primary px-2"><HiOutlineMail/></Button>
-                    </div>
+                        <InputColor type="email" className="" placeholder="Your Email.."/>
+                        <Button type="submit" className="btn btn-primary"><HiOutlineMail size={20}/></Button>
+                        </BorderInput>
                     </div>
                 </form>
             </div>
             </div>
         <FooterEnd>
-            
         <div className="container">
         <div container="row">
         <div className="d-flex copy-right text-center">

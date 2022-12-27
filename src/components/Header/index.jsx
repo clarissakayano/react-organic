@@ -17,7 +17,7 @@ const Header  = () =>(
                             <img src={logo} alt="Logo Organic" />
                         </a>
                     </div>
-                    <div className="d-flex p-4 col-md-6 row-col-none d-none d-md-block d-lg-block d-xl-block mt-3">
+                    <div className="d-flex col-md-6 row-col-none d-none d-md-block d-lg-block d-xl-block mt-3">
                         <ul className="d-flex justify-content-between list-unstyled">
                             <li className="nav-item">
                                 <Link className="nav-link text-color" to="/">HOME</Link>

@@ -29,6 +29,7 @@ export const MainCheckout = styled.div`
     border-top: 2px solid #ccc;
     padding: 10px 15px;
     margin-bottom: 30px;
+    transition: all .3s ease-in-out;
 }
 
 .green {
@@ -57,10 +58,45 @@ td, th {
     font-size: 18px;
 
 }
-
+.text {
+    font-family: roboto,sans-serif;
+}
+.pay{
+    color: #999;;
+}
+.grey {
+    color: #666;
+    font-family: roboto,sans-serif;
+    font-size: 14px;
+}
 
 `;
 
 export const Text = styled.h4`
      font-family: playfair display,serif;
 `;
+
+export const ButtonPlace = styled.button`
+    display: inline-block;
+    background-color: #97ae76;
+    color: #fff;
+    border: 2px solid #97ae76;
+    border-radius: 25px;
+    padding: 10px 25px;
+    border-color: #97ae76;
+    text-align: center;
+    font-family: roboto,sans-serif;
+    transition: all .3s ease-in-out;
+
+    &:hover{
+        background-color: #7e975a;
+        border-color: #7e975a;
+        color: #fff;
+    }
+    @media (max-width: 991px) {
+        padding: 0 30px;
+        line-height: 36px;
+     }
+
+`;
+

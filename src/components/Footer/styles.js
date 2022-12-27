@@ -33,8 +33,15 @@ ul {
     color: #666;
     margin-bottom: 16px;
    }
-
+#btn{
+    position: absolute;
+}
 `
+export const Style =styled.p`
+color: #666;
+font-size: 14px;
+font-family: roboto,sans-serif;
+`;
 
 export const TitleFooter = styled.h3`
     font-family: roboto, sans-serif;
@@ -55,12 +62,13 @@ export const Button = styled.button`
     line-height: 45px;
     border-color: #97ae76;
     text-align: center;
+    position: relative;
 
 `;
 
 export const Title= styled.h4`
     font-family: roboto,sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 `;
 
 export const FooterEnd = styled.section`

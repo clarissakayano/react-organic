@@ -25,7 +25,7 @@ const About =() => (
             </BannerAbout>
             <div className="container mt-5">
                 <div className="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-0 px-md-4">
-                    <div className="col d-flex justify-content-end">
+                    <div className="col d-flex justify-content-lg-end justify-content-md-center ">
                         <img className="img-fluid" src={hands} alt="hands" />
                     </div>
                     <div className="col p-3">
@@ -58,7 +58,7 @@ const About =() => (
                             elementum, risus risus tincidunt massa, a iaculis risus turpis id sapien diam
                             pellentesque ullamcorper."</p>
                     </div>
-                    <div className="col d-flex justify-content-start">
+                    <div className="col d-flex justify-content-lg-start justify-content-md-center ">
                         <img className="img-fluid"  src={maosfolhas2} alt="hands" />
                    </div>
                 </div>

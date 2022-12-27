@@ -57,6 +57,10 @@ ul {
     font-family: roboto,sans-serif;
 }
 
+.box{
+    display: inline-block;
+}
+
 `;
 export const Color = styled.span`
     font-family: roboto,sans-serif;

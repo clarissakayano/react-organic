@@ -43,7 +43,7 @@ const Cart =() => (
                     <tr>
                         <th scope="row" className="align">
                             <div className="ratio ratio-21x9 pad mb-4 mt-4">
-                            <div>
+                            <div className="mt-4">
                                 <img className="products img-fluid" src={lettuce} width="100px"/>
                             </div>
                             </div>
@@ -65,7 +65,7 @@ const Cart =() => (
                     <tr>
                         <th scope="row" className="align">
                             <div className="ratio ratio-21x9 pad mb-4 mt-4">
-                            <div>
+                            <div className="mt-4">
                                 <img className="products img-fluid" src={apple} width="100px"/>
                             </div>
                             </div>
@@ -96,11 +96,9 @@ const Cart =() => (
                             <div className="mb-3 mt-3">
                                 <Button2>APPLY COUPON</Button2>
                             </div>
-                            
                         </td>
                         <td></td>
                         <td></td>
-                        
                         <td className="text-center" colspan="3"><Button3>UPDATE CARD</Button3></td>
                     </tr>
                 </tfoot>
@@ -152,9 +150,8 @@ const Cart =() => (
 
                     </tbody>
                     <tfoot>
-                    <tr colspan="1" className="row">
-                        
-                            <div className="d-flex justify-content-center row-cols-1 row-cols-sm-8 mx-5 mb-3 mt-3" >
+                    <tr className="row ">
+                            <div className="row-cols-1 row-cols-sm-8 mx-5 mb-3 mt-3" >
                                 <Input placeholder="Coupon Code"/>
                             </div>
                             <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-5 mb-3">

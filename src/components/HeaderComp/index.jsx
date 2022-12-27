@@ -14,7 +14,7 @@ const Header  = () =>(
                     <img src={logo} alt="Logo Organic" />
                 </a>
             </div>
-            <div className="d-flex p-4 col-md-6 row-col-none d-none d-md-block d-lg-block d-xl-block mt-3">
+            <div className="d-flex col-md-6 row-col-none d-none d-md-block d-lg-block d-xl-block mt-3">
                 <ul className="d-flex justify-content-between list-unstyled">
                     <li className="nav-item">
                         <Link className="nav-link text-color" to="/">HOME</Link>
@@ -57,23 +57,23 @@ const Header  = () =>(
                 </div>
                 <div className="offcanvas-body">
                     <ul className='list-unstyled'>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/">HOME</Link>
+                        <li className="nav-item mt-2">
+                            <Link className="nav-link text-mobile" to="/">Home</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/produtos">SHOP</Link>
+                        <li className="nav-item mt-2">
+                            <Link className="nav-link text-mobile" to="/produtos">Shop</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/about">ABOUT</Link>
+                        <li className="nav-item mt-2">
+                            <Link className="nav-link text-mobile" to="/about">About</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/contato">CONTACT</Link>
+                        <li className="nav-item mt-2">
+                            <Link className="nav-link text-mobile" to="/contato">Contact</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/checkout">CHECKOUT</Link>
+                        <li className="nav-item mt-2">
+                            <Link className="nav-link text-mobile" to="/checkout">Checkout</Link>
                         </li>
-                        <li className="nav-item text-color">
-                            <Link to="/carrinho"><AiOutlineShoppingCart /></Link>
+                        <li className="nav-item mt-2 text-mobile">
+                            <Link to="/carrinho">Cart <AiOutlineShoppingCart /></Link>
                         </li>
                     </ul>
                 </div>

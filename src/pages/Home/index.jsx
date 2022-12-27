@@ -125,7 +125,7 @@ const Home =() => (
             </BannerContainer>
             <Text className="d-flex justify-content-center mt-5">The Blog</Text>
             <div className="container">
-                <div className="row mt-5 row-cols-1 row-cols-md-3 g-3">
+                <div className="row mt-5 row-cols-1 row-cols-md-3 g-1">
                     <div className="col d-flex">
                         <CardsBlog
                         image={tempero}
