@@ -78,7 +78,9 @@ export const FooterEnd = styled.section`
    list-style: none;
    padding: 20px 0;
 
-   #copy{}
+   #color{
+    color: #666;;
+   }
 
    .mr{
     margin-right: 0px 20px 16px;

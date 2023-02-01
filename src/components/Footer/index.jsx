@@ -7,6 +7,7 @@ import {FooterContainer, Button, FooterEnd, Title, InputColor, BorderInput, Styl
 import {HiOutlineMail} from "react-icons/hi";
 import {BiMap} from "react-icons/bi";
 import {FiPhone} from "react-icons/fi";
+import { Link } from 'react-router-dom';
 
 
 
@@ -88,9 +89,11 @@ const Footer = () => (
         <div container="row">
         <div className="d-flex copy-right text-center">
             <div>
-                <span className="text-align-center">Copyright © 2017 Designed by AuThemes. All rights reserved.</span>
+                <Link to="https://www.linkedin.com/in/clarissa-a-kayano-37a011259/">
+                <span className="text-align-center" id="color" >Site by Clarissa Kayano</span>
+                </Link>
             </div>
-            <div className="d-flex">
+            <div className="d-flex mb-2">
                 <div className=" px-2">
                     <img src={cred1} />
                 </div>
