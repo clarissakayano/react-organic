@@ -5,9 +5,10 @@ import { BannerCheckout, ButtonPlace, MainCheckout, Text, TitleCheck } from "./s
 import HeaderComp from "../../components/HeaderComp";
 import { AiOutlineCheck } from "react-icons/ai";
 import { BorderInput } from "../../components/Footer/styles";
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import groupcard from "../../assets/groupcard.png"
 import { Link } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 
 
 
@@ -17,6 +18,12 @@ import { Link } from "react-router-dom";
 const Checkout = () => {
 
     const [showhide, setShowhide] = useState("no");
+    const setTitle = useTitle();
+
+      useEffect(() => {
+        setTitle('Checkout');
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      });
 
     const handleshow= e=>{
     const getshow = e.target.value;
@@ -44,7 +51,7 @@ const Checkout = () => {
                 </div>
                 <div className="info">
                    <AiOutlineCheck  className="me-2" /><span>Have a coupon?</span>
-                   <Link className="green mx-2" to="/carrinho">Click here to enter your code</Link>
+                   <Link className="green mx-2" to="/cart">Click here to enter your code</Link>
                 </div>
                 <div>
                 <Text>Billing Details</Text>
@@ -72,7 +79,7 @@ const Checkout = () => {
                 </div>
                 <div className="col-md-6">
                     <label for="inputEmail4" className="form-label">Country *</label>
-                    <select id="inputState" className="form-select grey">
+                    <select id="inputState" className="form-select grey"  >
                     <option selected>Brasil</option>
                     <option value="Brasil" selected="selected">Brasil</option>
                     <option value="Afeganistão">Afeganistão</option>

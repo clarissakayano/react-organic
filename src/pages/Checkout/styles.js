@@ -9,7 +9,6 @@ background-size: cover;
 height: 300px;
 background-position: center;
 color: white;
-
 `;
 
 
@@ -44,6 +43,7 @@ input {
 #inputState {
     padding: 10px;
     border-radius: 0%;
+    font-size: 16px;
 }
 
 label {

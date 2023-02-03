@@ -109,7 +109,7 @@ export const FooterEnd = styled.section`
 
 export const BorderInput = styled.section`
 
-
+border: none;
 &:focus{
         border-color: #97ae76;
         outline: none;

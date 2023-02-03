@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes as Router, Route} from "react-router-dom";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Cart from "../pages/Cart";
@@ -18,12 +19,12 @@ const Routes =() => (
         <Router>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/carrinho" element={<Cart />} />
-            <Route path="/produtos" element={<Shop />} />
-            <Route path="/detalhes" element={<ShopDetail />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/shop/salad" element={<ShopDetail />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/contato" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/*" element={<Shop />} />
         </Router>
     </BrowserRouter>

@@ -8,9 +8,19 @@ import men from "../../assets/menabout.jpg";
 import woman from "../../assets/womanabout.jpg";
 import men2 from "../../assets/men2.jpg";
 import CardAbout from "../../components/CardsAbout";
+import useTitle from "../../hooks/useTitle";
+import { useEffect } from "react";
 
 
-const About =() => (
+const About =() => {
+
+    const setTitle = useTitle();
+
+      useEffect(() => {
+        setTitle('About');
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      });
+        return(
     <>
         <HeaderComp />
         <AboutContainer>
@@ -122,5 +132,6 @@ const About =() => (
         <Footer />
     </>
 );
+    };
 
 export default About;

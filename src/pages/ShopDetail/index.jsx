@@ -15,15 +15,23 @@ import pear from "../../assets/pear.jpg";
 import tomato from "../../assets/tomate.jpg";
 import bitter from "../../assets/bitter_melon.jpg";
 import cucumber from "../../assets/cucumber.jpg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiTwotoneHeart } from "react-icons/ai";
 import {ImFacebook, ImGooglePlus, ImPinterest, ImTwitter} from "react-icons/im"
 import { RiInstagramLine } from "react-icons/ri";
+import useTitle from "../../hooks/useTitle";
 
 
 
 const ShopDetail =() => {
     const [count, setCount] =useState('0');
+    const setTitle = useTitle();
+
+    useEffect(() => {
+      setTitle('Salad');
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    });
+
     return(
     <>
         <HeaderComp />
@@ -132,27 +140,27 @@ const ShopDetail =() => {
                 <Title className="d-flex justify-content-center">Related Products</Title>
 
                 <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center mt-5 g-4 mb-5 text-center">
-                    <div className="col d-flex">
+                    <div className="col ">
                         <CardShop
                         title="Salad"
                         image={lettuce} alt="lettuce"
                         price={3.20}
                         />
                     </div>
-                    <div className="col d-flex">
+                    <div className="col">
                         <CardShop title="Onion"
                         image={onion} alt="onion"
                         price={3.20}
                         />
                     </div>
-                    <div className="col d-flex">
+                    <div className="col">
                         <CardShop
                         title="Bean"
                         image={bean} alt="bean"
                         price={3.50}
                         />
                     </div>
-                    <div className="col d-flex">
+                    <div className="col">
                         <CardShop title="Lemon"
                         image={lemon} alt="lemon"
                         price={1.80}

@@ -23,19 +23,16 @@ const Header  = () =>(
                                 <Link className="nav-link text-color" to="/">HOME</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link  text-color" to="/produtos">SHOP</Link>
+                                <Link className="nav-link  text-color" to="/shop">SHOP</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link  text-color" to="/about">ABOUT</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link  text-color" to="/contato">CONTACT</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link  text-color" to="/checkout">CHECKOUT</Link>
+                                <Link className="nav-link  text-color" to="/contact">CONTACT</Link>
                             </li>
                             <li className="nav-item  text-color">
-                            <Link to="/carrinho" className=""><AiOutlineShoppingCart /></Link>
+                            <Link to="/cart" className=""><AiOutlineShoppingCart /></Link>
                             </li>
                         </ul>
                     </div>
@@ -64,18 +61,18 @@ const Header  = () =>(
                                     <Link className="nav-link" to="/">HOME</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/produtos">SHOP</Link>
+                                    <Link className="nav-link" to="/shop">SHOP</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/about">ABOUT</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/contato">CONTACT</Link>
+                                    <Link className="nav-link" to="/contact">CONTACT</Link>
                                 </li>
                                 <li className="nav-item">
                                 <Link className="nav-link  text-color" to="/checkout">CHECKOUT</Link>
                                 </li>
-                                <Link to="/carrinho" className="nav-link">CART <AiOutlineShoppingCart className="mx-4" /></Link>
+                                <Link to="/cart" className="nav-link">CART <AiOutlineShoppingCart className="mx-4" /></Link>
                             </ul>
                         </div>
                         </div>

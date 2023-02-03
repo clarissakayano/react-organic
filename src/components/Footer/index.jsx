@@ -75,11 +75,13 @@ const Footer = () => (
                     <div>
                         <Title>NEWSLETTER</Title>
                         <Style>Subscribe now to get daily updates</Style>
-                        <BorderInput id="bg-button" className="col-auto form-group border-0 d-flex left-inner-addon">
+                        <div className=" py-1">
+                        <div id="btn">
+                        <InputColor type="email" className="ms-3 px-3" placeholder="Your Email.."/>
+                        <Button type="submit" className="btn btn-primary"><HiOutlineMail/></Button>
 
-                        <InputColor type="email" className="" placeholder="Your Email.."/>
-                        <Button type="submit" className="btn btn-primary"><HiOutlineMail size={20}/></Button>
-                        </BorderInput>
+                        </div>
+                    </div>
                     </div>
                 </form>
             </div>

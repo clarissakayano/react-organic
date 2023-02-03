@@ -33,4 +33,10 @@ export const Button = styled.button`
     border-color: #97ae76;
     text-align: center;
 
+     &:hover{
+        background-color: #7e975a;
+        border-color: #7e975a;
+        color: #fff;
+    }
+
 `;

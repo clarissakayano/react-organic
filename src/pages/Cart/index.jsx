@@ -6,21 +6,33 @@ import lettuce from "../../assets/lettuce.jpg";
 import apple from "../../assets/apple.jpg";
 import { RiCloseCircleFill} from "react-icons/ri";
 import Footer from '../../components/Footer';
+import useTitle from '../../hooks/useTitle';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
 
 
 
-const Cart =() => (
+const Cart =() => {
+
+    const setTitle = useTitle();
+
+  useEffect(() => {
+    setTitle('Shop-Cart');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  });
+    return(
+
     <>
         <HeaderComp />
         <CartContainer className="mb-5">
             <BannerCart className='flex-grow-1'>
                 <div className="container d-flex justify-content-center">
-                    <div className="row">
-                        <div className="col">
-                            <TitleCart className="mt-5">Shop</TitleCart>
+                    <div className="row mt-5">
+                        <div className="col d-flex py-5">
+                            <TitleCart>Shop Cart</TitleCart>
                         </div>
                     </div>
                 </div>
@@ -155,7 +167,7 @@ const Cart =() => (
                                 <Input placeholder="Coupon Code"/>
                             </div>
                             <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-3 mb-3">
-                                <Button2 >APPLY COUPON</Button2>
+                                <Button2>APPLY COUPON</Button2>
                             </div>
                             <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-3 mb-3">
                             <Button3 >UPDATE CARD</Button3>
@@ -183,7 +195,7 @@ const Cart =() => (
                     </tbody>
                     </table>
                     <div className="mb-5">
-                        <ButtonCheck>PROCEED TO CHECKOUT</ButtonCheck>
+                        <Link to="/checkout"> <ButtonCheck>PROCEED TO CHECKOUT</ButtonCheck></Link>
                     </div>
                     </div>
 
@@ -201,7 +213,7 @@ const Cart =() => (
                     </tbody>
                     </table>
                     <div className="mb-5">
-                        <Button2>PROCEED TO CHECKOUT</Button2>
+                        <Link to="/checkout"><Button2>PROCEED TO CHECKOUT</Button2></Link>
                     </div>
                 </div>
             </div>
@@ -209,5 +221,6 @@ const Cart =() => (
         <Footer/>
     </>
 );
+    };
 
 export default Cart;

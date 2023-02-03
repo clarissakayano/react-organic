@@ -17,11 +17,20 @@ import CardsBlogRev from "../../components/CardsBlogRev";
 import tempero from "../../assets/blog-card-temp.jpg";
 import tomato from "../../assets/blog-card-tomate.jpg";
 import avocado from "../../assets/blog-card-avocado.jpg";
+import useTitle from "../../hooks/useTitle";
+import { useEffect } from "react";
 
 
 
 
-const Home =() => (
+const Home =() => {
+    const setTitle = useTitle();
+
+    useEffect(() => {
+      setTitle('Home');
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    });
+    return(
     <>
         <Header />
         <Main>
@@ -176,5 +185,5 @@ const Home =() => (
         <Footer />
     </>
 );
-
+};
 export default Home;

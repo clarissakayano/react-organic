@@ -5,11 +5,18 @@ import { BannerLogin,ButtonSubmit,MainLogin, Text, Title, TitleLogin } from "./s
 import HeaderComp from "../../components/HeaderComp";
 import { AiOutlineCheck } from "react-icons/ai";
 import { BorderInput } from "../../components/Footer/styles";
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import groupcard from "../../assets/groupcard.png"
+import useTitle from "../../hooks/useTitle";
 
 
 const Login = () => {
+const setTitle = useTitle();
+
+  useEffect(() => {
+    setTitle('Login');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  });
 
     return (
 

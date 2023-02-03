@@ -6,10 +6,20 @@ import CardContact from '../../components/CardContact';
 import {FaMapMarkerAlt} from  "react-icons/fa";
 import {MdPhoneAndroid} from  "react-icons/md";
 import {FiMail} from "react-icons/fi";
+import useTitle from '../../hooks/useTitle';
+import { useEffect } from 'react';
 
 
 
-const Contacts =() => (
+const Contacts =() => {
+
+const setTitle = useTitle();
+
+      useEffect(() => {
+        setTitle('Contact');
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+      });
+        return(
     <>
         <HeaderComp />
         <ContactContainer>
@@ -17,7 +27,7 @@ const Contacts =() => (
                 <div className="container d-flex justify-content-center">
                     <div className="row mt-5">
                         <div className="col d-flex py-5">
-                            <TitleContact role="button">Blog Detail</TitleContact>
+                            <TitleContact role="button">Contact</TitleContact>
                         </div>
                     </div>
                 </div>
@@ -26,19 +36,19 @@ const Contacts =() => (
                 <div className="row row-cols-1 row-cols-md-3 d-flex col-sm justify-content-center mt-5 mb-5">
                     <div className="col d-flex" >
                         <CardContact
-                        icon={<FaMapMarkerAlt size={50}/>} alt="map"
-                        description="379 5th Ave New York, NYC 10018"
+                        icon={<FaMapMarkerAlt size={60}/>} alt="map"
+                        description="12/2th Quincy St, NYC 12018"
                         />
                     </div>
                     <div className="col d-flex" >
                         <CardContact
-                        icon={<MdPhoneAndroid size={50}/>}alt="phone"
+                        icon={<MdPhoneAndroid size={60}/>}alt="phone"
                         description="(+1) 11 321 4567"
                         />
                     </div>
                     <div className="col d-flex" >
                         <CardContact
-                        icon={<FiMail size={50}/>} alt="email"
+                        icon={<FiMail size={60}/>} alt="email"
                         description="contact@site.com"
                         />
                     </div>
@@ -79,4 +89,5 @@ const Contacts =() => (
         <Footer />
     </>
 );
+    };
 export default Contacts;

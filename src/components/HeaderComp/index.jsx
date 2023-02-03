@@ -20,19 +20,16 @@ const Header  = () =>(
                         <Link className="nav-link text-color" to="/">HOME</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link  text-color" to="/produtos">SHOP</Link>
+                        <Link className="nav-link  text-color" to="/shop">SHOP</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link  text-color" to="/about">ABOUT</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link  text-color" to="/contato">CONTACT</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link  text-color" to="/checkout">CHECKOUT</Link>
+                        <Link className="nav-link  text-color" to="/contact">CONTACT</Link>
                     </li>
                     <li className="nav-item text-color">
-                    <Link to="/carrinho"><AiOutlineShoppingCart /></Link>
+                    <Link to="/cart"><AiOutlineShoppingCart /></Link>
                     </li>
                 </ul>
             </div>
@@ -61,19 +58,19 @@ const Header  = () =>(
                             <Link className="nav-link text-mobile" to="/">Home</Link>
                         </li>
                         <li className="nav-item mt-2">
-                            <Link className="nav-link text-mobile" to="/produtos">Shop</Link>
+                            <Link className="nav-link text-mobile" to="/shop">Shop</Link>
                         </li>
                         <li className="nav-item mt-2">
                             <Link className="nav-link text-mobile" to="/about">About</Link>
                         </li>
                         <li className="nav-item mt-2">
-                            <Link className="nav-link text-mobile" to="/contato">Contact</Link>
+                            <Link className="nav-link text-mobile" to="/contact">Contact</Link>
                         </li>
                         <li className="nav-item mt-2">
                             <Link className="nav-link text-mobile" to="/checkout">Checkout</Link>
                         </li>
                         <li className="nav-item mt-2 text-mobile">
-                            <Link to="/carrinho">Cart <AiOutlineShoppingCart /></Link>
+                            <Link to="/cart">Cart <AiOutlineShoppingCart /></Link>
                         </li>
                     </ul>
                 </div>
