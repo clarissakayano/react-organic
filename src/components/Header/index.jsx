@@ -4,6 +4,7 @@ import {BannerContainer, ContainerMobile} from './styles';
 import logo from '../../assets/logo.png';
 import {AiOutlineShoppingCart} from "react-icons/ai";
 import {GiHamburgerMenu} from "react-icons/gi";
+import { Name } from '../HeaderComp/styles';
 
 const Header  = () =>(
 
@@ -44,7 +45,7 @@ const Header  = () =>(
                             <img className="img-fluid" src={logo} alt="Logo Organic" />
                             </a>
                         </div>
-                        <div className="col mt-2">
+                        <div className="col mt-2 text-end">
                             <button className="btn" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasWithBothOptions" ><GiHamburgerMenu/>
                             </button>
@@ -56,22 +57,28 @@ const Header  = () =>(
                             <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div className="offcanvas-body">
+                           <div>
+                                <input type="text" className="form-control color mb-2" placeholder="Need some fresh vegatables?" aria-label="text"/>
+                            </div>
+                             <Name>Organic Shop</Name>
                             <ul className='list-unstyled'>
+                                <hr/>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/">HOME</Link>
                                 </li>
+                                <hr/>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/shop">SHOP</Link>
                                 </li>
+                                <hr/>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/about">ABOUT</Link>
                                 </li>
+                                <hr/>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/contact">CONTACT</Link>
                                 </li>
-                                <li className="nav-item">
-                                <Link className="nav-link  text-color" to="/checkout">CHECKOUT</Link>
-                                </li>
+                                <hr/>
                                 <Link to="/cart" className="nav-link">CART <AiOutlineShoppingCart className="mx-4" /></Link>
                             </ul>
                         </div>

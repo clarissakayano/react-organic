@@ -24,7 +24,7 @@ import useTitle from "../../hooks/useTitle";
 
 
 const ShopDetail =() => {
-    const [count, setCount] =useState('0');
+    const [count, setCount] =useState(0);
     const setTitle = useTitle();
 
     useEffect(() => {
@@ -73,7 +73,7 @@ const ShopDetail =() => {
                                 +
                             </ButtonAdd>
                             </div>
-                            <div className="d-flex justify-content-evenly mt-2 px-2">
+                            <div className="d-flex justify-content-evenly mt-2 me-2">
                                 <ButtonCart >ADD TO CART</ButtonCart>
                             </div>
                             <div className="mt-2">

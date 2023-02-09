@@ -7,6 +7,7 @@ import maosfolhas2 from "../../assets/maosfolhas2.jpg";
 import men from "../../assets/menabout.jpg";
 import woman from "../../assets/womanabout.jpg";
 import men2 from "../../assets/men2.jpg";
+import men3 from "../../assets/team.jpg";
 import CardAbout from "../../components/CardsAbout";
 import useTitle from "../../hooks/useTitle";
 import { useEffect } from "react";
@@ -100,7 +101,7 @@ const About =() => {
             </BannerAbout2>
             <MainTitles className="text-center mt-5">Our Team</MainTitles>
             <div className="container d-flex mb-5">
-                <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div className="row row-cols-1 row-cols-sm-3 row-cols-md-3">
                     <div className="col">
                         <CardAbout title="Card 1"
                         image={men} alt="men lider"
@@ -122,6 +123,13 @@ const About =() => {
                         image={men2} alt="men farmer"
                         description="Peter Castro"
                         description1="Farmer"
+                        />
+                    </div>
+                    <div className="col">
+                        <CardAbout title="Card 3"
+                        image={men3} alt="men farmer"
+                        description="Peter Castro"
+                        description1="Leader"
                         />
                     </div>
                 </div>

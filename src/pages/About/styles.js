@@ -11,6 +11,8 @@ export const BannerAbout = styled.section`
     background-size: cover;
     height: 300px;
     background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
     color: white;
 `;
 

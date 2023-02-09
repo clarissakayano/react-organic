@@ -134,6 +134,7 @@ export const ButtonAdd = styled.button`
     float: left;
     border: 1px solid #97ae76;
     text-align: center;
+    margin-right: 10px;
 
     &:hover, i{
         background-color: #7e975a;

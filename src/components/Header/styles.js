@@ -28,5 +28,13 @@ export const Text = styled.div`
 
 export const ContainerMobile = styled.div`
 
-
+.color{
+    background: rgba(0,0,0,.05);
+    color: rgba(0,0,0,.7);
+    font-size: 14px;
+    border: #666;
+}
+button {
+    border: none;
+}
 `;

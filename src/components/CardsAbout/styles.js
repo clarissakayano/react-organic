@@ -9,6 +9,11 @@ export const RadiusCard = styled.div`
 export const RadiusCards = styled.img`
     border-radius: 50%;
     padding: 70px;
+
+    @media (max-width: 768px) {
+        padding: 30px;
+        border-radius:50%;
+    };
 `;
 
 export const Radius = styled.div`

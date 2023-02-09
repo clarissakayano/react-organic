@@ -8,8 +8,17 @@ export const RadiusCard = styled.div`
 
 export const RadiusCards = styled.img`
     border-radius: 50%;
-    padding: 70px;
-    
+
+    @media (max-width: 576px){
+        padding: 50px;
+    }
+    @media ( min-width:1024px){
+        padding: 25px;
+    }
+    @media (min-width:1025) and ( max-width: 2560px){
+        padding: 10px;
+    }
+
 `;
 
 export const Radius = styled.div`

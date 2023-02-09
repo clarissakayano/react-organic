@@ -31,37 +31,63 @@ export const Text = styled.h3`
 `;
 export const BannerContainer = styled.section`
     background-image: url(${folhas});
+    background-blend-mode: darken;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
-    height: 300px;
-
+    min-height: auto;
     background-position: center;
-
     font-family: 'Playfair Display', serif;
     color: white;
 
-    .absolute1{
-        position: absolute;
-        left: 0%;
-        top: 0px;
+    @media (min-width:1200px) {
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+
 }
 
-    .relative{
-        position: relative;
+    h3{
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    padding-top: 50px;
+
+@media (max-width:991px) {
+    font-size: 18px;
+
+}
     }
 `;
 
+export const TitleH = styled.h2`
+font-size: 70px;
+
+@media (max-width:991px) {
+    font-size: 36px;
+
+}
+@media (min-width:992px) {
+    font-size: 70px;
+
+}
+`;
 
 export const BannerContainer2 = styled.section`
     background-image: url(${orange});
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
 
     background-position: center;
 
     font-family: 'Playfair Display', serif;
-    color: white
+    color: white;
 
 
 `;
@@ -70,6 +96,8 @@ export const BannerContainer2 = styled.section`
 
 
 export const Button = styled.button`
+    font-family: roboto,sans-serif;
+    font-size: 14PX;
     background-color: #97ae76;
     border-radius: 25px;
     color: white;

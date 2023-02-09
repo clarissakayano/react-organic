@@ -2,7 +2,7 @@ import './styles';
 import {Link} from "react-router-dom";
 import logo from '../../assets/logo.png';
 import {AiOutlineShoppingCart} from "react-icons/ai";
-import { Container, ContainerMobile } from './styles';
+import { Container, ContainerMobile, Name } from './styles';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Header  = () =>(
@@ -29,7 +29,7 @@ const Header  = () =>(
                         <Link className="nav-link  text-color" to="/contact">CONTACT</Link>
                     </li>
                     <li className="nav-item text-color">
-                    <Link to="/cart"><AiOutlineShoppingCart /></Link>
+                    <Link to="/cart"><AiOutlineShoppingCart size={17}  /></Link>
                     </li>
                 </ul>
             </div>
@@ -41,7 +41,7 @@ const Header  = () =>(
                     <img className="img-fluid" src={logo} alt="Logo Organic" />
                     </a>
                 </div>
-                <div className="col mt-2">
+                <div className="col mt-2 text-end">
                     <button className="btn" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasWithBothOptions" ><GiHamburgerMenu/>
                     </button>
@@ -53,25 +53,32 @@ const Header  = () =>(
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
+                <div  className="color">
+                    <input type="text" className="form-control color mb-2" placeholder="Need some fresh vegatables?" aria-label="text"/>
+                </div>
                     <ul className='list-unstyled'>
+                        <Name>Organic Shop</Name>
+                        <hr />
                         <li className="nav-item mt-2">
                             <Link className="nav-link text-mobile" to="/">Home</Link>
                         </li>
+                        <hr />
                         <li className="nav-item mt-2">
                             <Link className="nav-link text-mobile" to="/shop">Shop</Link>
                         </li>
+                        <hr />
                         <li className="nav-item mt-2">
                             <Link className="nav-link text-mobile" to="/about">About</Link>
                         </li>
+                        <hr />
                         <li className="nav-item mt-2">
                             <Link className="nav-link text-mobile" to="/contact">Contact</Link>
                         </li>
-                        <li className="nav-item mt-2">
-                            <Link className="nav-link text-mobile" to="/checkout">Checkout</Link>
-                        </li>
+                        <hr />
                         <li className="nav-item mt-2 text-mobile">
-                            <Link to="/cart">Cart <AiOutlineShoppingCart /></Link>
+                            <Link to="/cart">Cart <AiOutlineShoppingCart size={20} /></Link>
                         </li>
+                        <hr />
                     </ul>
                 </div>
                 </div>

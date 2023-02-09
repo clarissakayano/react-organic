@@ -4,6 +4,8 @@ import bannercart from '../../assets/bannercarrinho.jpg';
 export const BannerCart = styled.section`
     background-image: url(${bannercart});
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
     background-size: cover;
     height: 300px;
     background-position: center;

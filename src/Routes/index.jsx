@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes as Router, Route} from "react-router-dom";
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Cart from "../pages/Cart";

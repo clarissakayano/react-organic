@@ -36,13 +36,13 @@ const setTitle = useTitle();
                 <div className="row row-cols-1 row-cols-md-3 d-flex col-sm justify-content-center mt-5 mb-5">
                     <div className="col d-flex" >
                         <CardContact
-                        icon={<FaMapMarkerAlt size={60}/>} alt="map"
+                        icon={<FaMapMarkerAlt size={50}/>} alt="map"
                         description="12/2th Quincy St, NYC 12018"
                         />
                     </div>
                     <div className="col d-flex" >
                         <CardContact
-                        icon={<MdPhoneAndroid size={60}/>}alt="phone"
+                        icon={<MdPhoneAndroid size={50}/>}alt="phone"
                         description="(+1) 11 321 4567"
                         />
                     </div>
@@ -62,28 +62,24 @@ const setTitle = useTitle();
                     />
                 </div>
 
-                <section className="container mt-5">
-                    <form className='row g-3 mb-3'>
-                        <textarea className='col-12 form-control form-control-lg' type='text' placeholder='Your message'
+                <form className="row g-3 mb-3 mt-4">
+                    <div  className="col-12">
+                        <textarea className="form-control form-control-lg" type='text' placeholder='Your message'
                         aria-label=".form-control-lg example" rows='6'/>
-                        <div class="row mt-3">
-                            <div className="col">
-                                <input type="text" class="form-control" placeholder="Your Name" aria-label="Your Name"/>
-                            </div>
-                            <div className="col">
-                                <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email"/>
-                            </div>
-                            <div className="mt-2">
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="Phone Number"></input>
-                            </div>
-                            <div className="col-12 mb-5">
-                                <Button className="btn mt-3 " href="#" role="button">SEND EMAIL</Button>
-                            </div>
+                    </div>
+                        <div className="col-md-6">
+                            <input type="text" class="form-control" placeholder="Your Name" aria-label="Your Name"/>
                         </div>
-                    </form>
-                </section>
-
-
+                        <div className="col-md-6">
+                            <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email"/>
+                        </div>
+                        <div className="col-md-12 mt-2">
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Phone Number"></input>
+                        </div>
+                        <div className="col-12 mb-5">
+                            <Button className="btn mt-3 " href="#" role="button">SEND EMAIL</Button>
+                        </div>
+                </form>
             </div>
         </ContactContainer>
         <Footer />
