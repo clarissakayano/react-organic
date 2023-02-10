@@ -20,14 +20,29 @@ export const BannerAbout2 = styled.section`
     background-image: url(${about2});
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
-    background-position: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 30px;
     text-align: center;
-    padding: 43px 0;
+
+    p{
+    font-family: inherit;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+
+}
+
+    span{
+    font-family: inherit;
+    font-size: 23px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+    }
 `;
 
 

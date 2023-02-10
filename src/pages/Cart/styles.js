@@ -18,7 +18,6 @@ export const TableStyle =styled.div`
 }
 
 .table-style>:not(caption)>*>* {
-   
     background-color: white;
     border-bottom-width: 1px;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);

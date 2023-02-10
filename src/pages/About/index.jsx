@@ -36,7 +36,7 @@ const About =() => {
             </BannerAbout>
             <Who className="container mt-5">
                 <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-2 g-0 px-md-4">
-                    <div className="col d-flex justify-content-md-end justify-content-sm-center ">
+                    <div className="col d-flex justify-content-sm-center justify-content-md-end  ">
                         <img className="img-fluid" src={hands} alt="hands" />
                     </div>
                     <div className="col p-3">
@@ -71,30 +71,30 @@ const About =() => {
                             Sed pulvinar, purus sed efficitur elementum, risus risus tincidunt massa,
                             a iaculis risus turpis id sapien diam pellentesque ullamcorper.</p>
                     </div>
-                    <div className="col d-flex justify-content-md-start justify-content-sm-center ">
+                    <div className="col d-flex justify-content-sm-center justify-content-md-start  ">
                         <img className="img-fluid" src={maosfolhas} alt="hands" />
                     </div>
                 </What>
             </div>
             <BannerAbout2 className="flex-grow-1" >
-                <div className="container">
-                    <div className="row md-2">
-                        <div className="col ">
+                <div className="d-flex justify-content-center align-items-center py-4">
+                    <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 container g-3">
+                        <div className="col mt-5 mb-3">
                         <p> 154 </p>
                         <span>HAPPY CLIENT</span>
                         </div>
 
-                        <div className="col">
+                        <div className="col mt-5 mb-3">
                         <p>234</p>
                         <span>PRODUCTS IN STORE</span>
                         </div>
 
-                        <div className="col ">
+                        <div className="col mt-5 mb-3">
                         <p>32</p>
                         <span>YEAR OF EXPERIENCE</span>
                         </div>
 
-                        <div className="col">
+                        <div className="col mt-5 mb-3">
                         <p>126</p>
                         <span>RUNING PROJECTS</span>
                         </div>
