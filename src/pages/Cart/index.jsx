@@ -1,4 +1,4 @@
-import {BannerCart, TitleCart, CartContainer, Button2, Text, Button3, Product, TableStyle, ButtonCheck, Input} from './styles';
+import {BannerCart, TitleCart, CartContainer, Button2, Text, Button3, Product, TableStyle, ButtonCheck, Input, Border} from './styles';
 
 import HeaderComp from "../../components/HeaderComp";
 import CardShop from "../../components/CardShop";
@@ -118,81 +118,115 @@ const Cart =() => {
             </table>
             </div>
 
-            <TableStyle className="container d-lg-none">
-                <div id="border">
-                <table className="table table-striped table-style">
-                    <tbody>
-                        <tr>
-                        <th scope="col">Product:</th>
-                        <td colspan="1"></td>
-                        <td className="text-end"><Product>Salad</Product></td>
-                        </tr>
+            <TableStyle className="container d-lg-none table table-striped table-light table-style  align-middle mb-0">
+                <div>
+                    <table className="table table-striped table-style table-light align-middle mb-0">
+                        <tbody>
+                            <tr>
+                                <th scope="col">Product:</th>
+                                <td colspan="1"></td>
+                                <td className="text-end"><Product>Salad</Product></td>
+                            </tr>
 
-                        <tr>
-                        <th scope="row">Weight:</th>
-                        <td colspan="1"></td>
-                        <td className="text-end">4.4 kg</td>
-                        </tr>
+                            <tr>
+                                <th scope="row">Weight:</th>
+                                <td colspan="1"></td>
+                                <td className="text-end">4.4 kg</td>
+                            </tr>
 
-                        <tr>
-                        <th scope="row">Quantity:</th>
-                        <td colspan="1"></td>
-                        <td className="text-end">
-                        <input className="btn-color text-center inputcart" placeholder='1'></input>
-                        </td>
-                        </tr>
+                            <tr>
+                                <th scope="row">Quantity:</th>
+                                <td colspan="1"></td>
+                                <td className="text-end">
+                                <input className="btn-color text-center inputcart" placeholder='1'></input>
+                            </td>
+                            </tr>
 
-                        <tr>
-                        <th scope="row">Price:</th>
-                        <td colspan="1"></td>
-                        <td className="text-end">$2.26</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">Total:</th>
-                        <td colspan="1"></td>
-                        <td className="text-end">$2.26</td>
+                            <tr>
+                                <th scope="row">Price:</th>
+                                <td colspan="1"></td>
+                                <td className="text-end">$2.26</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total:</th>
+                                <td colspan="1"></td>
+                                <td className="text-end">$2.26</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td colspan="1"></td>
+                                <td className="text-end"><RiCloseCircleFill color='#97ae76' size={20}/></td>
+                            </tr>
+                        </tbody>
 
-                        </tr>
+                        </table>
+                        <table className="table table-striped table-style  align-middle mb-0">
+                            <tbody>
+                                <tr>
+                                    <th scope="col">Product:</th>
+                                    <td colspan="1"></td>
+                                    <td className="text-end"><Product>Apple</Product></td>
+                                </tr>
 
-                        <tr>
-                        <th scope="row"></th>
-                        <td colspan="1"></td>
-                        <td className="text-end"><RiCloseCircleFill color='#97ae76' size={20}/></td>
-                        </tr>
+                                <tr>
+                                    <th scope="row">Weight:</th>
+                                    <td colspan="1"></td>
+                                    <td className="text-end">4.4 kg</td>
+                                </tr>
 
-                    </tbody>
-                    <tfoot>
-                    <tr className="row justify-content-start">
-                            <div className="row-cols-1 row-cols-sm-8 mx-3 mb-3 mt-3" >
-                                <Input placeholder="Coupon Code"/>
-                            </div>
-                            <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-3 mb-3">
-                                <Button2>APPLY COUPON</Button2>
-                            </div>
-                            <div className="row-cols-1 row-cols-sm-8 d-flex justify-content-center mx-3 mb-3">
-                            <Button3 >UPDATE CARD</Button3>
-                        </div>
-                    </tr>
-                    </tfoot>
-                </table>
-            </div>
-            </TableStyle>
-            </div>
+                                <tr>
+                                    <th scope="row">Quantity:</th>
+                                    <td colspan="1"></td>
+                                    <td className="text-end">
+                                    <input className="btn-color text-center inputcart" placeholder='1'></input>
+                                </td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Price:</th>
+                                    <td colspan="1"></td>
+                                    <td className="text-end">$2.26</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Total:</th>
+                                    <td colspan="1"></td>
+                                    <td className="text-end">$2.26</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td colspan="1"></td>
+                                    <td className="text-end"><RiCloseCircleFill color='#97ae76' size={20}/></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </TableStyle>
+                <tr className="border d-block py-3 px-4 mb-5 d-lg-none">
+                    <div className="d-flex flex-md-row flex-column  " >
+                        <Input className="px-0 py-2 mb-3 me-md-2 w-100" placeholder="Coupon Code"/>
+                        <Button2 className="px-0 py-2 mb-3 me-md-2 w-100">APPLY COUPON</Button2>
+                    </div>
+                    <div className="d-flex">
+                        <Button3 className="mb-3">UPDATE CART</Button3>
+                    </div>
+                </tr>
+                </div>
 
             <div className="container">
                 <h3 className="text py-3">Cart Total</h3>
                 <div className="d-lg-none">
                     <table className="table">
                         <tbody >
-                        <tr>
-                            <th className="text-cart ">Subtotal</th>
-                            <td className="price-1 text-end">$6.31</td>
-                        </tr>
-                        <tr>
-                            <th className="text-cart">Total</th>
-                            <td className="price-1 text-end">$6.31</td>
-                        </tr>
-                    </tbody>
+                            <tr>
+                                <th className="text-cart ">Subtotal</th>
+                                <td className="price-1 text-end">$6.31</td>
+                            </tr>
+                            <tr>
+                                <th className="text-cart">Total</th>
+                                <td className="price-1 text-end">$6.31</td>
+                            </tr>
+                        </tbody>
                     </table>
                     <div className="mb-5">
                         <Link to="/checkout"> <ButtonCheck>PROCEED TO CHECKOUT</ButtonCheck></Link>
@@ -202,15 +236,15 @@ const Cart =() => {
                     <div  className="col col-md-8 d-none d-lg-block">
                     <table className="table table-bordered">
                         <tbody>
-                        <tr>
-                            <td><Text>Subtotal</Text></td>
-                            <td className="price">$6.31</td>
-                        </tr>
-                        <tr>
-                            <td><Text>Total</Text></td>
-                            <td className="price">$6.31</td>
-                        </tr>
-                    </tbody>
+                            <tr>
+                                <td><Text>Subtotal</Text></td>
+                                <td className="price">$6.31</td>
+                            </tr>
+                            <tr>
+                                <td><Text>Total</Text></td>
+                                <td className="price">$6.31</td>
+                            </tr>
+                        </tbody>
                     </table>
                     <div className="mb-5">
                         <Link to="/checkout"><Button2>PROCEED TO CHECKOUT</Button2></Link>

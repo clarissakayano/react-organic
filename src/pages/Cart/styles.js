@@ -13,6 +13,10 @@ export const BannerCart = styled.section`
 
 `;
 export const TableStyle =styled.div`
+.border{
+    border: none;
+}
+
 .table-style>:not(caption)>*>* {
    
     background-color: white;
@@ -123,13 +127,24 @@ tbody{
     .display-grid {
         display: grid;
     }
+    th{
+
+text-align:start;
+}
+
+td{
+
+    text-align:end;
+}
+
 
     tfoot {
-        border-collapse: collapse;
         .row-wrap {
 	    flex-flow: row wrap;
 }
     }
+
+    
 
 // @media screen and (max-width: 991px){
  //   .table tbody td{display: flex;}
@@ -161,6 +176,11 @@ export const TableTitle = styled.p`
     height: 40px;
     line-height: 40px;
 
+`;
+export const Border = styled.div`
+border-bottom: 1px solid;
+border-left: 1px solid;
+border-right: 1px solid;
 `;
 
 export const Input = styled.input`

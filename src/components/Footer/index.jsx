@@ -17,75 +17,80 @@ const Footer = () => (
 <>
     <FooterContainer className="pt-3">
         <div className="container mb-3">
-            <div className="d-lg-flex justify-content-evenly mt-5 mb-5 ">
-                <div className="">
-                    <a className="navbar-brand" href="/">
-                        <img className="mb-3 img-fluid" src={logo} alt="Logo Organic" />
-                    </a>
-                    <div className='d-flex'>
-                        <ul>
-                            <li className="mb-2">
-                            <BiMap className="mr-4"/> 379 5th Ave New York, NYC 10018
-                            </li>
-                            <li className="mb-2">
-                            <FiPhone/> (+1) 96 716 6879
-                            </li>
-                            <li>
-                            <HiOutlineMail /> contact@site.com
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div className="row">
-
-                </div>
-                <hr/>
-                <div>
-                    <p><Title className="mb-4">SHOP</Title></p>
-                    <div className="d-flex justify-content-between d-lg-block grey">
-                        <Style>Food</Style>
-                        <Style>Farm</Style>
-                        <Style>Health</Style>
-                        <Style>Organic</Style>
-                    </div>
-                </div>
-                    <hr />
-                    <div>
-                        <Title className="mb-4">SUPPORT</Title>
-                        <div className="d-flex justify-content-between d-lg-block">
-                            <Style>Contact Us</Style>
-                            <Style>FAQ</Style>
-                            <Style>Privacy Policy</Style>
-                            <Style>Blog</Style>
-                        </div>
-                    </div>
-                    <hr />
-                    <div>
-                        <Title className="mb-4">MY ACCOUNT</Title>
-                        <div className="d-flex justify-content-between d-lg-block">
-                        <Style>Sign In</Style>
-                        <Style>My Cart</Style>
-                        <Style>My Wishlist</Style>
-                        <Style>Check Out</Style>
-                    </div>
-                </div>
-                <hr/>
-                <form>
-                    <div>
-                        <Title>NEWSLETTER</Title>
-                        <Style>Subscribe now to get daily updates</Style>
-                        <div className=" py-1">
-                        <div id="btn">
-                        <InputColor type="email" className="ms-3 px-3" placeholder="Your Email.."/>
-                        <Button type="submit" className="btn btn-primary"><HiOutlineMail/></Button>
+            <div className="row">
+                <div className="d-lg-flex justify-content-lg-evenly justify-content-center  mt-5 mb-5 ">
+                    <div className="">
+                        <a className="navbar-brand" href="/">
+                            <img className="mb-3 img-fluid" src={logo} alt="Logo Organic" />
+                        </a>
+                        <div className='d-flex'>
+                            <ul>
+                                <li className="mb-3">
+                                <BiMap className="me-3"/> 379 5th Ave New York, NYC 10018
+                                </li>
+                                <li className="mb-3">
+                                <FiPhone  className="me-3"/> (+1) 96 716 6879
+                                </li>
+                                <li>
+                                <HiOutlineMail  className="me-3"/> contact@site.com
+                                </li>
+                            </ul>
 
                         </div>
                     </div>
+                    
+
+                    
+                    <hr/>
+                    <div className="col d-flex flex-column flex-lg-row col-12 col-lg-5 justify-content-between me-4">
+                        
+                        <div>
+                            <p><Title className="mb-4">SHOP</Title></p>
+                            <div className="d-flex flex-lg-column list px-0  grey">
+                                <Style>Food</Style>
+                                <Style>Farm</Style>
+                                <Style>Health</Style>
+                                <Style>Organic</Style>
+                            </div>
+                        </div>
+                        <hr />
+                        <div>
+                            <Title className="mb-4">SUPPORT</Title>
+                            <div className="d-flex d-lg-block">
+                                <Style>Contact Us</Style>
+                                <Style>FAQ</Style>
+                                <Style>Privacy Policy</Style>
+                                <Style>Blog</Style>
+                            </div>
+                        </div>
+                        <hr />
+                        <div>
+                            <Title className="mb-4">MY ACCOUNT</Title>
+                            <div className="d-flex d-lg-block">
+                            <Style>Sign In</Style>
+                            <Style>My Cart</Style>
+                            <Style>My Wishlist</Style>
+                            <Style>Check Out</Style>
+                        </div>
                     </div>
-                </form>
+                    </div>
+                    <hr/>
+                    <form>
+                        <div>
+                            <Title>NEWSLETTER</Title>
+                            <Style>Subscribe now to get daily updates</Style>
+                            <div className=" py-1">
+                            <div id="btn">
+                            <InputColor type="email" className="px-1" placeholder="Your Email.."/>
+                            <Button type="submit" className="btn btn-primary"><HiOutlineMail/></Button>
+
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            </div>
+        </div>
         <FooterEnd>
         <div className="container">
         <div container="row">

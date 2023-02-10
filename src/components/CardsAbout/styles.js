@@ -14,6 +14,10 @@ export const RadiusCards = styled.img`
         padding: 30px;
         border-radius:50%;
     };
+    @media (min-width: 992px) {
+        padding: 35px;
+        border-radius:50%;
+    };
 `;
 
 export const Radius = styled.div`

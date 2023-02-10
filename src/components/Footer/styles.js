@@ -41,6 +41,7 @@ export const Style =styled.p`
 color: #666;
 font-size: 14px;
 font-family: roboto,sans-serif;
+margin-right: 40px;
 `;
 
 export const TitleFooter = styled.h3`
@@ -56,7 +57,7 @@ export const List = styled.div`
 
 export const Button = styled.button`
     background-color: #97ae76;
-    border-radius: 50%;
+    border-radius: 100%;
     color: white;
     padding: 0 15px;
     line-height: 45px;

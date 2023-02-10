@@ -45,4 +45,53 @@ export const AboutContainer= styled.div`
 export const MainTitles= styled.h3`
     font-family: 'Playfair Display', serif;
     color: black;
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 15px;
+
 `;
+
+export const Who = styled.div`
+
+p{
+    font-family: roboto,sans-serif;
+    font-size: 14px ;
+    color: #666;
+    line-height: 26px;
+}
+img {
+    object-fit: cover;
+}
+`;
+
+export const MainTitle= styled.h3`
+    font-family: 'Playfair Display', serif;
+    color: black;
+    text-align: end;
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 15px;
+    margin-right: 20px;
+
+`;
+
+export const What = styled.div`
+
+
+p{
+    font-family: roboto,sans-serif;
+    text-align: end;
+    margin-left: 40px;
+    font-size: 14px ;
+    color: #666;
+    line-height: 26px;
+    padding: 0px;
+}
+img {
+    object-fit: cover;
+}
+
+ @media (max-width: 767px){
+    flex-direction: column-reverse;
+ }
+ `;
