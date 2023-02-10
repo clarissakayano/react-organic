@@ -9,7 +9,7 @@ export const BannerAbout = styled.section`
     background-image: url(${bannerAbout});
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 250px;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
@@ -49,9 +49,8 @@ export const BannerAbout2 = styled.section`
 export const TitleAbout= styled.h1`
     font-family: 'Playfair Display', serif;
     color: white;
-    text-align: center;
-    align-items: center;
     font-size: 35px;
+    margin-top: 10px;
 `;
 
 export const AboutContainer= styled.div`

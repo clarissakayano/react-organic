@@ -6,9 +6,9 @@ export const BannerLogin = styled.section`
 background-image: url(${bannerlogin});
 background-repeat: no-repeat;
 background-size: cover;
-height: 300px;
+height: 250px;
 background-position: center;
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(0, 0, 0, 0.7);
 background-blend-mode: darken;
 color: white;
 
@@ -21,6 +21,7 @@ export const TitleLogin= styled.h1`
     text-align: center;
     align-items: center;
     font-size: 35px;
+    margin-top: 10px;
 `;
 export const MainLogin = styled.div`
 

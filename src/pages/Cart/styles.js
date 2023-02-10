@@ -7,7 +7,7 @@ export const BannerCart = styled.section`
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     background-size: cover;
-    height: 300px;
+    height: 250px;
     background-position: center;
     color: white;
 
@@ -163,8 +163,7 @@ export const Text = styled.p`
 export const TitleCart= styled.h2`
     font-family: 'Playfair Display', serif;
     color: white;
-    text-align: center;
-    align-items: center;
+    margin-top: 10px;
 `;
 
 export const TableTitle = styled.p`

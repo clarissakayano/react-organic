@@ -39,53 +39,56 @@ const Header  = () =>(
                     </div>
                 </div>
                 <ContainerMobile className="container d-md-none">
-                    <div className="row">
-                        <div className="col-9 d-md-none">
-                            <a className="navbar-brand me-4" href="/">
-                            <img className="img-fluid" src={logo} alt="Logo Organic" />
-                            </a>
-                        </div>
-                        <div className="col mt-2 text-end">
-                            <button className="btn" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasWithBothOptions" ><GiHamburgerMenu/>
-                            </button>
-                        </div>
+            <div className="row">
+                <div className="col-9 d-md-none">
+                    <a className="navbar-brand me-4" href="/">
+                    <img className="img-fluid" src={logo} alt="Logo Organic" />
+                    </a>
+                </div>
+                <div className="col mt-2 text-end">
+                    <button className="btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" ><GiHamburgerMenu/>
+                    </button>
+                </div>
 
-                        <div className="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                        <div className="offcanvas-header">
-                            <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel"><img src={logo} alt="Logo Organic" /></h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div className="offcanvas-body">
-                           <div>
-                                <input type="text" className="form-control color mb-2" placeholder="Need some fresh vegatables?" aria-label="text"/>
-                            </div>
-                             <Name>Organic Shop</Name>
-                            <ul className='list-unstyled'>
-                                <hr/>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/">HOME</Link>
-                                </li>
-                                <hr/>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/shop">SHOP</Link>
-                                </li>
-                                <hr/>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/about">ABOUT</Link>
-                                </li>
-                                <hr/>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/contact">CONTACT</Link>
-                                </li>
-                                <hr/>
-                                <Link to="/cart" className="nav-link">CART <AiOutlineShoppingCart className="mx-4" /></Link>
-                            </ul>
-                        </div>
-                        </div>
-                        <i className="fi fi-rr-menu-burger"></i>
-                    </div>
-                </ContainerMobile>
+                <div className="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div className="offcanvas-header">
+                    <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel"><img src={logo} alt="Logo Organic" /></h5>
+                    <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div className="offcanvas-body">
+                <div  className="color">
+                    <input type="text" className="form-control color mb-2" placeholder="Need some fresh vegatables?" aria-label="text"/>
+                </div>
+                    <ul className='list-unstyled'>
+                        <Name>Organic Shop</Name>
+                        <hr />
+                        <li className="nav-item mt-2">
+                            <Link className="nav-link text-mobile" to="/">Home</Link>
+                        </li>
+                        <hr />
+                        <li className="nav-item mt-2">
+                            <Link className="nav-link text-mobile" to="/shop">Shop</Link>
+                        </li>
+                        <hr />
+                        <li className="nav-item mt-2">
+                            <Link className="nav-link text-mobile" to="/about">About</Link>
+                        </li>
+                        <hr />
+                        <li className="nav-item mt-2">
+                            <Link className="nav-link text-mobile" to="/contact">Contact</Link>
+                        </li>
+                        <hr />
+                        <li className="nav-item mt-2 text-mobile">
+                            <Link to="/cart">Cart <AiOutlineShoppingCart size={20} /></Link>
+                        </li>
+                        <hr />
+                    </ul>
+                </div>
+                </div>
+                <i className="fi fi-rr-menu-burger"></i>
+            </div>
+        </ContainerMobile>
             </header>
         </BannerContainer>
     </>

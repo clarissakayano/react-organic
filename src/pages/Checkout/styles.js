@@ -6,7 +6,7 @@ export const BannerCheckout = styled.section`
 background-image: url(${bannercheckout});
 background-repeat: no-repeat;
 background-size: cover;
-height: 300px;
+height: 250px;
 background-position: center;
 background-color: rgba(0, 0, 0, 0.5);
 background-blend-mode: darken;
@@ -20,6 +20,7 @@ export const TitleCheck= styled.h1`
     text-align: center;
     align-items: center;
     font-size: 35px;
+    margin-top: 10px;
 `;
 export const MainCheckout = styled.div`
 

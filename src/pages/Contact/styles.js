@@ -6,7 +6,7 @@ export const BannerContact = styled.section`
     background-image: url(${bannercontact});
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 250px;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
@@ -18,6 +18,7 @@ export const TitleContact= styled.h2`
     color: white;
     text-align: center;
     align-items: center;
+    margin-top: 10px;
 `;
 
 export const ContactContainer = styled.h2`
