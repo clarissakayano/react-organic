@@ -29,7 +29,7 @@ const Header  = () =>(
                         <Link className="nav-link  text-color" to="/contact">CONTACT</Link>
                     </li>
                     <li className="nav-item text-color">
-                    <Link to="/cart"><AiOutlineShoppingCart size={17}  /></Link>
+                    <Link to="/cart"><AiOutlineShoppingCart size={20}  /></Link>
                     </li>
                 </ul>
             </div>

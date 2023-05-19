@@ -3,7 +3,7 @@ import cred1 from '../../assets/card1.png';
 import cred2 from '../../assets/card2.png';
 import cred3 from '../../assets/card3.png';
 import cred4 from '../../assets/card4.png';
-import {FooterContainer, Button, FooterEnd, Title, InputColor, BorderInput, Style} from './styles';
+import {FooterContainer, Button, FooterEnd, Title, InputColor, BorderInput, Style, Inp} from './styles';
 import {HiOutlineMail} from "react-icons/hi";
 import {BiMap} from "react-icons/bi";
 import {FiPhone} from "react-icons/fi";
@@ -81,9 +81,13 @@ const Footer = () => (
                             <Style>Subscribe now to get daily updates</Style>
                             <div className=" py-1">
                             <div id="btn">
-                            <InputColor type="email" className="px-1" placeholder="Your Email.."/>
-                            <Button type="submit" className="btn btn-primary"><HiOutlineMail/></Button>
-
+                            <div className="flex-grow-1 ">
+                            <Inp>
+                            <input
+                            type="email"className="border-0 mx-3 py-2 w-100" placeholder="Your Email.." />
+                            <Button type="submit" className="btn"><HiOutlineMail size={25} c/></Button>
+                            </Inp>
+                            </div>
                             </div>
                         </div>
                         </div>
@@ -96,9 +100,9 @@ const Footer = () => (
         <div container="row">
         <div className="d-flex copy-right text-center">
             <div>
-                <Link to="https://www.linkedin.com/in/clarissa-a-kayano-37a011259/">
+                <a href="https://www.linkedin.com/in/clarissa-a-kayano-37a011259/" target='blank'>
                 <span className="text-align-center" id="color" >Site by Clarissa Kayano</span>
-                </Link>
+                </a>
             </div>
             <div className="d-flex mb-2">
                 <div className=" px-2">

@@ -20,11 +20,13 @@ import { AiTwotoneHeart } from "react-icons/ai";
 import {ImFacebook, ImGooglePlus, ImPinterest, ImTwitter} from "react-icons/im"
 import { RiInstagramLine } from "react-icons/ri";
 import useTitle from "../../hooks/useTitle";
+import { useCallback } from "react";
 
 
 
 const ShopDetail =() => {
     const [count, setCount] =useState(0);
+   
     const setTitle = useTitle();
 
     useEffect(() => {
@@ -64,7 +66,10 @@ const ShopDetail =() => {
                         </p>
                         <div className="d-flex flex-wrap">
                             <div className="d-flex mt-2">
-                            <ButtonSub type="button" onClick={() => setCount(count-1)}>
+                            <ButtonSub type="button" onClick= {() => {
+                                 if (count > 0) {
+                            setCount(count-1);
+                        }}}>
                                 -
                             </ButtonSub>
                             <span className="border">{count}

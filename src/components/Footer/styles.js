@@ -55,17 +55,6 @@ export const List = styled.div`
 `;
 
 
-export const Button = styled.button`
-    background-color: #97ae76;
-    border-radius: 100%;
-    color: white;
-    padding: 0 15px;
-    line-height: 45px;
-    border-color: #97ae76;
-    text-align: center;
-    position: relative;
-
-`;
 
 export const Title= styled.h4`
     font-family: roboto,sans-serif;
@@ -141,4 +130,51 @@ export const InputColor = styled.input`
     }
 `
 
+export const Button = styled.button`
+    background-color: #97ae76;
+    border-radius: 50%;
+    color: white;
+    padding: 0 15px;
+    line-height: 45px;
+    border-color: #97ae76;
+    text-align: center;
+    position: relative;
+    :hover{
+        background-color: #8fa66d;
+        color: white;
+    }
+  
 
+    >svg{
+        height: 20px;
+        width: 20px;
+    }
+   
+`;
+
+
+export const Inp = styled.div`
+font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  background-color: transparent;
+  color: rgb(51, 51, 51);
+  color: #888;
+  font-family: inherit;
+font-size: 14px;
+  textarea:focus,
+  input:focus {
+    outline: none;
+
+  }
+
+  input {
+    border-radius: 0px;
+    padding: 0px 15px;
+    transition: all .3s ease-in-out;
+  }
+`
